@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="83b6cb1d-ada3-422f-893b-da1abd4adae3">
+  <stat_objects>
+    <stat_object index="0" is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_POISON_DART" />
+        <field name="Type" type="StringStatObjectFieldDefinition" value="DAMAGE" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="|Poison Dart|" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="|Deals poison damage each turn and reduces Poison Resist by 15.|" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Earth_PoisonDart" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="20" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Poisoned_01:Dummy_StatusFX" />
+        <field name="StatusEffectOverrideForItems" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Item_Poisoned_01" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="MaterialType" />
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="ImmuneFlag" type="EnumerationStatObjectFieldDefinition" value="4" enumeration_type_name="AttributeFlag" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_PoisonDart" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_PoisonDart" />
+      </fields>
+    </stat_object>
+    <stat_object index="1" is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_CONTAMINATE" />
+        <field name="Type" type="StringStatObjectFieldDefinition" value="DAMAGE" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="|Contaminate|" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="|Deals poison damage each turn and reduces Poison Resist by 15.|" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Earth_Contamination" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="20" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Poisoned_01:Dummy_StatusFX" />
+        <field name="StatusEffectOverrideForItems" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Item_Poisoned_01" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="MaterialType" />
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="ImmuneFlag" type="EnumerationStatObjectFieldDefinition" value="4" enumeration_type_name="AttributeFlag" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Contaminate" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_Contaminate" />
+      </fields>
+    </stat_object>
+    <stat_object index="2" is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_POISON_WAVE" />
+        <field name="Type" type="StringStatObjectFieldDefinition" value="DAMAGE" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="|Poison Wave|" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="|Deals poison damage each turn and reduces Poison Resist by 15.|" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Earth_PoisonWave" />
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="20" enumeration_type_name="FormatStringColor" />
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Poisoned_01:Dummy_StatusFX" />
+        <field name="StatusEffectOverrideForItems" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Item_Poisoned_01" />
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="MaterialType" />
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="ImmuneFlag" type="EnumerationStatObjectFieldDefinition" value="4" enumeration_type_name="AttributeFlag" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_PoisonWave" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_PoisonWave" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

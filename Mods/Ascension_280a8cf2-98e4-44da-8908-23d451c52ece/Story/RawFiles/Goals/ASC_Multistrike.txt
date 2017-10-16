@@ -1,0 +1,64 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_ASC_MultiStrike("ASC_TRIGGER_ICE_FAN", "Projectile_ASC_DIMINISH_IceFan");
+DB_ASC_MultiStrike("ASC_TRIGGER_FLAMING_DAGGERS", "Projectile_ASC_DIMINISH_FlamingDaggers");
+
+DB_ASC_MultiStrikeTargets((CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, (CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, 0);
+
+DB_ASC_MultiStrikeTimer(0);
+KBSECTION
+IF
+	CharacterStatusApplied(_Target, _Status, (CHARACTERGUID)_Source)
+AND
+	DB_ASC_MultiStrike(_Status, _Skill)
+AND
+	DB_ASC_MultiStrikeTargets(_Target, _Source, _HitCount)
+AND
+	IntegertoString(_HitCount, _HitCountString)
+AND
+	StringConcatenate(_Skill, _HitCountString, _Diminish)
+AND
+	IntegerSum(_HitCount, 1, _NewHitCount)
+THEN
+	RemoveStatus(_Target, _Status);
+	NOT DB_ASC_MultistrikeTargets(_Target, _Source, _HitCount);
+	DB_ASC_MultiStrikeTargets(_Target, _Source, _NewHitCount);
+	SetVarObject(_Target, "ASC_Source", _Source);
+	SetVarString(_Target, "ASC_Skill", _Diminish);
+	SetStoryEvent(_Target, "ASC_MultiStrike");
+
+IF
+	CharacterStatusApplied(_Target, _Status, (CHARACTERGUID)_Source)
+AND
+	DB_ASC_MultiStrike(_Status, _Skill)
+AND
+	NOT DB_ASC_MultiStrikeTargets(_Target, _Source, _)
+THEN
+	RemoveStatus(_Target, _Status);
+	DB_ASC_MultistrikeTargets(_Target, _Source, 1);
+	SetVarObject(_Target, "ASC_Source", _Source);
+	SetVarString(_Target, "ASC_Skill", _Skill);
+	SetStoryEvent(_Target, "ASC_MultiStrike");
+
+
+IF
+	CharacterStatusApplied(_Target, _Status, (CHARACTERGUID)_Source)
+AND
+	DB_ASC_MultiStrike(_Status, _Skill)
+AND
+	NOT DB_ASC_MultiStrikeTimer(1)
+THEN
+	TimerLaunch("ASC_Multistrike", 1000);
+
+
+IF
+	TimerFinished("ASC_Multistrike")
+AND
+	DB_ASC_MultiStrikeTargets(_Target, _Source, _HitCount)
+THEN
+	NOT DB_ASC_MultiStrikeTargets(_Target, _Source, _HitCount);
+	NOT DB_ASC_MultiStrikeTimer(1);
+EXITSECTION
+
+ENDEXITSECTION

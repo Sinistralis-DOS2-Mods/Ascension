@@ -1,0 +1,51 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_ASC_SHATTER_TRACKER((CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, (CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, "", "");
+KBSECTION
+IF
+	CharacterUsedSkillOnTarget(_Source, (CHARACTERGUID)_Target, _Skill, _)
+AND
+	_Skill == "Target_ASC_Shatter"
+AND
+	DB_ASC_Chill(_Status, _Potency)
+AND
+	IntegertoString(_Potency, _StringPotency)
+AND
+	HasActiveStatus(_Target, _Status, 1)
+AND
+	StringConcatenate("Projectile_ASC_Shatter_", _StringPotency, _ShatterEffect)
+THEN
+	DB_ASC_ShatterTracker(_Target, _Source, _Skill, _Status);
+	TimerLaunch("ShatterTimer", 900);
+
+IF
+	CharacterUsedSkillOnTarget(_Source, (CHARACTERGUID)_Target, _Skill, _)
+AND
+	_Skill == "Target_ASC_Shatter"
+AND
+	HasActiveStatus(_Target, "ASC_FROZEN", 1)
+THEN
+	DB_ASC_ShatterTracker(_Target, _Source, "ASC_FROZEN", "Projectile_ASC_Shatter_5");
+	TimerLaunch("ShatterTimer", 900);
+
+IF
+	TimerFinished("ShatterTimer")
+AND
+	DB_ASC_ShatterTracker(_Target, _Source, _Status, _Skill)
+THEN
+	SetVarObject(_Target, "ASC_Source", _Source);
+	SetVarString(_Target, "ASC_Skill", _Skill);
+	SetStoryEvent(_Target, "ASC_Shatter");
+	TimerLaunch("ShatterTimer2", 200);
+
+IF
+	TimerFinished("ShatterTimer2")
+AND
+	DB_ASC_ShatterTracker(_Target, _Source, _Status, _Skill)
+THEN
+	NOT DB_ASC_ShatterTracker(_Target, _Status);
+	RemoveStatus(_Target, _Status);
+EXITSECTION
+
+ENDEXITSECTION

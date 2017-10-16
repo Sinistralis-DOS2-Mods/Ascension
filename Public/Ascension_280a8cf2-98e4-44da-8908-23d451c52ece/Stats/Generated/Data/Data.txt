@@ -1,0 +1,46 @@
+key "SoftLevelCap","25"
+
+key "VitalityExponentialGrowth","1.25"
+
+key "VitalityStartingAmount","20"
+
+key "VitalityLinearGrowth","12"
+
+key "FirstVitalityLeapLevel","9"
+
+key "FirstVitalityLeapGrowth","1.15"
+
+key "SecondVitalityLeapLevel","13"
+
+key "SecondVitalityLeapGrowth","1.15"
+
+key "ThirdVitalityLeapLevel","16"
+
+key "ThirdVitalityLeapGrowth","1.15"
+
+key "FourthVitalityLeapLevel","18"
+
+key "FourthVitalityLeapGrowth","1.15"
+
+key "WeaponAccuracyPenaltyPerLevel","-10"
+
+key "WeaponAccuracyPenaltyCap","-80"
+
+key "LeadershipRange","15"
+
+key "LeadershipDodgingBonus","3"
+
+key "LowGroundBaseDamagePenalty","-0.2"
+
+key "SneakDefaultAPCost","2"
+
+key "SkillAbilityPhysicalDamageBoostPerPoint","3"
+
+key "SkillAbilityLifeStealPerPoint","5"
+
+key "SkillAbilityCritMultiplierPerPoint","7"
+
+key "TalentSneakingDamageBonus","50"
+
+key "DamageToThrownWeightRatio","0"
+

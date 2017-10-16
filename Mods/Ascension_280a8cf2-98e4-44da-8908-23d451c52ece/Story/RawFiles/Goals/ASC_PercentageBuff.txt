@@ -1,0 +1,45 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_ASC_PercentageBuff("CLEAR_MINDED", "Wits", "FireSpecialist", .02, .2);
+
+DB_ASC_Buffed((CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, (CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, "Status", "Attribute", 0);
+KBSECTION
+IF
+	CharacterStatusRemoved(_Target, _Status, _)
+AND
+	DB_ASC_PercentageBuff(_Status, _Attribute, _Ability, _Scale, _Base)
+AND
+	DB_ASC_Buffed(_Target, _Source, _Status, _Attribute, _IntBonus)
+THEN
+	NOT DB_ASC_Buffed(_Target, _Source, _Status, _Attribute, _IntBonus);
+	CharacterRemoveAttribute(_Target, _Attribute, _IntBonus);
+
+IF
+	CharacterStatusApplied(_Target, _Status, (CHARACTERGUID)_Source)
+AND
+	DB_ASC_PercentageBuff(_Status, _Attribute, _Ability, _Scale, _Base)
+AND
+	NOT DB_ASC_Buffed(_Target, _Source, _Status, _Attribute, _)
+AND
+	CharacterGetAbility(_Source, _Ability, _AbilityScore)
+AND
+	Real(_AbilityScore, _RealAbilityScore)
+AND
+	RealProduct(_Scale, _RealAbilityScore, _AbilityBonusScore)
+AND
+	RealSum(_AbilityBonusScore, _Base, _RealAbilityBonus)
+AND
+	CharacterGetAttribute(_Target, _Attribute, _AttributeScore)
+AND
+	Real(_AttributeScore, _RealAttributeScore)
+AND
+	RealProduct(_RealAttributeScore, _RealAbilityBonus, _RealAttributeBonus)
+AND
+	Integer(_RealAttributeBonus, _IntBonus)
+THEN
+	DB_ASC_Buffed(_Target, _Source, _Status, _Attribute, _IntBonus);
+	CharacterAddAttribute(_Target, _Attribute, _IntBonus);
+EXITSECTION
+
+ENDEXITSECTION

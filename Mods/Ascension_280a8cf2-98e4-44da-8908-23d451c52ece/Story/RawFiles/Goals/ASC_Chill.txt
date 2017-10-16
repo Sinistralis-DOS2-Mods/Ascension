@@ -1,0 +1,136 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_ASC_Chill("ASC_CHILLED_1", 1);
+DB_ASC_Chill("ASC_CHILLED_2", 2);
+DB_ASC_Chill("ASC_CHILLED_3", 3);
+DB_ASC_Chill("ASC_CHILLED_4", 4);
+
+DB_ASC_FreezeScale("Target_CryogenicStasis", .5);
+
+DB_ASC_Convert("ASC_TRIGGER_CHILLED");
+DB_ASC_Convert("CHILLED");
+DB_ASC_Convert("FROZEN");
+
+DB_ASC_ChillQueue((CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, 0);
+
+DB_ASC_ChillTimer(0);
+KBSECTION
+IF
+	CharacterUsedSkillOnTarget(_Source, (CHARACTERGUID)_Target, _Skill, _)
+AND
+	DB_ASC_FreezeScale(_Skill, _Scale)
+AND
+	CharacterGetAbility(_Source, "WaterSpecialist", _AbilityModifier)
+AND
+	Real(_AbilityModifier, _RealAbilityModifier)
+AND
+	RealProduct(_Scale, _RealAbilityModifier, _RealChillMod)
+AND
+	Integer(_RealChillMod, _FinalChillMod)
+THEN
+	DB_ASC_ChillQueue(_Target, _FinalChillMod);
+	TimerLaunch("ChillTimer", 250);
+
+IF
+	CharacterStatusApplied(_Character, _Status, _)
+AND
+	DB_ASC_Convert(_Status)
+AND
+	HasActiveStatus(_Character, "ASC_FROZEN", 0)
+AND
+	DB_ASC_ChillQueue(_Character, _QueuedPotency)
+AND
+	IntegerSum(_QueuedPotency, 1, _NewPotency)
+THEN
+	NOT DB_ASC_ChillQueue(_Character, _QueuedPotency);
+	DB_ASC_ChillQueue(_Character, _NewPotency);
+	RemoveStatus(_Character, _Status);
+
+IF
+	CharacterStatusApplied(_Character, _Status, _)
+AND
+	DB_ASC_Convert(_Status)
+AND
+	HasActiveStatus(_Character, "ASC_FROZEN", 0)
+AND
+	NOT DB_ASC_ChillQueue(_Character, _)
+THEN
+	DB_ASC_ChillQueue(_Character, 1);
+	RemoveStatus(_Character, _Status);
+
+IF
+	CharacterStatusApplied(_Character, _Status, _)
+AND
+	DB_ASC_Convert(_Status)
+AND
+	NOT DB_ASC_ChillTimer(1)
+THEN
+	TimerLaunch("ChillTimer", 250);
+	DB_ASC_ChillTimer(1);
+
+IF
+	TimerFinished("ChillTimer")
+THEN
+	NOT DB_ASC_ChillTimer(1);
+
+IF
+	TimerFinished("ChillTimer")
+AND
+	DB_ASC_ChillQueue(_Character, _PotencyToIncrement)
+AND
+	DB_ASC_Chill(_Status, _CurrentPotency)
+AND
+	HasActiveStatus(_Character, _Status, 1)
+AND
+	IntegerSum(_PotencyToIncrement, _CurrentPotency, _NewPotency)
+AND
+	_NewPotency < 5
+AND
+	DB_ASC_Chill(_NewStatus, _NewPotency)
+THEN
+	ApplyStatus(_Character, _NewStatus, 12.0);
+	NOT DB_ASC_ChillQueue(_Character, _PotencyToIncrement);
+
+
+IF
+	TimerFinished("ChillTimer")
+AND
+	DB_ASC_ChillQueue(_Character, _PotencyToIncrement)
+AND
+	DB_ASC_Chill(_Status, _CurrentPotency)
+AND
+	HasActiveStatus(_Character, _Status, 1)
+AND
+	IntegerSum(_PotencyToIncrement, _CurrentPotency, _NewPotency)
+AND
+	_NewPotency >= 5
+THEN
+	ApplyStatus(_Character, "ASC_FROZEN", 6.0);
+	NOT DB_ASC_ChillQueue(_Character, _PotencyToIncrement);
+
+
+IF
+	TimerFinished("ChillTimer")
+AND
+	DB_ASC_ChillQueue(_Character, _NewPotency)
+AND
+	_NewPotency < 5
+AND
+	DB_ASC_Chill(_Status, _NewPotency)
+THEN
+	ApplyStatus(_Character, _Status, 12.0);
+	NOT DB_ASC_ChillQueue(_Character, _NewPotency);
+
+IF
+	TimerFinished("ChillTimer")
+AND
+	DB_ASC_ChillQueue(_Character, _NewPotency)
+AND
+	_NewPotency >= 5
+THEN
+	ApplyStatus(_Character, "ASC_FROZEN", 6.0);
+	NOT DB_ASC_ChillQueue(_Character, _NewPotency);
+EXITSECTION
+
+ENDEXITSECTION

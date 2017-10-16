@@ -1,0 +1,37 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_ASC_DoTs("ASC_POISON_DART", "ASC_TRIGGER_POISON_DART", "Projectile_ASC_DoT_PoisonDartStart");
+DB_ASC_DoTs("ASC_CONTAMINATE", "ASC_TRIGGER_CONTAMINATE","Projectile_ASC_DoT_Contaminate");
+DB_ASC_DoTs("ASC_POISON_WAVE", "ASC_TRIGGER_POISON_WAVE", "Projectile_ASC_DoT_PoisonWave");
+
+DB_ASC_DoTsCure("FORTIFIED");
+DB_ASC_DoTsCure("REGENERATION");
+DB_ASC_DoTsCure("CLEANSE_WOUNDS");
+DB_ASC_DoTsCure("FIRST_AID");
+KBSECTION
+IF
+	CharacterStatusApplied(_Target, _Master, (CHARACTERGUID)_Source)
+AND
+	DB_ASC_DoTs(_Master, _Slave, _Skill)
+THEN
+	ApplyStatus(_Target, _Slave, 5.96);
+	DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _Skill, "ASC_DoTsTick");
+
+IF
+	CharacterStatusApplied(_Target, _Status, _)
+AND
+	DB_ASC_DoTsCure(_Status)
+AND
+	DB_ASC_DoTs(_Master, _Slave, _Skill)
+AND
+	HasActiveStatus(_Target, _Master, 1)
+AND
+	DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _Skill, "ASC_DoTsTick")
+THEN
+	NOT DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _Skill, "ASC_DoTsTick");
+	RemoveStatus(_Target, _Master);
+	RemoveStatus(_Target, _Slave);
+EXITSECTION
+
+ENDEXITSECTION

@@ -1,0 +1,20 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+// Trigger Skill, Projectile Skill, Is Single Target
+DB_ASC_Hybrid("ASC_TRIGGER_PYROCLASTIC_ROCK", "Projectile_ASC_HYBRID_PyroclasticRock", 1);
+DB_ASC_Hybrid("ASC_TRIGGER_ROCK_SPIKES", "Projectile_ASC_HYBRID_RockSpikes", 1);
+KBSECTION
+IF
+	CharacterStatusApplied(_Target, _Status, (CHARACTERGUID)_Source)
+AND
+	DB_ASC_Hybrid(_Status, _HybridSkill, _IsSingleTarget)
+THEN
+	SetVarObject(_Target, "ASC_Source", _Source);
+	SetVarString(_Target, "ASC_Skill", _HybridSkill);
+	SetVarInteger(_Target, "ASC_IsSingleTarget", _IsSingleTarget);
+	SetStoryEvent(_Target, "ASC_HybridEffect");
+	RemoveStatus(_Target, _Status);
+EXITSECTION
+
+ENDEXITSECTION

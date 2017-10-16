@@ -1,0 +1,18 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_ASC_AfterEffect("ASC_PYRO_HASTED", "ASC_EXHAUSTED");
+
+DB_ASC_AfterEffectTracker((CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, (CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, "Status");
+KBSECTION
+IF
+	CharacterStatusRemoved(_Target, _Status, _)
+AND
+	DB_ASC_AfterEffect(_Status, _AfterEffect)
+AND
+	CharacterIsInCombat(_Target, 1)
+THEN
+	ApplyStatus(_Target, _AfterEffect, 6.0);
+EXITSECTION
+
+ENDEXITSECTION
