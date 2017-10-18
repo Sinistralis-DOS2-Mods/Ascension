@@ -15,6 +15,8 @@ DB_ASC_Convert("FROZEN");
 DB_ASC_ChillQueue((CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, 0);
 
 DB_ASC_ChillTimer(0);
+
+
 KBSECTION
 IF
 	CharacterUsedSkillOnTarget(_Source, (CHARACTERGUID)_Target, _Skill, _)
@@ -131,6 +133,17 @@ AND
 THEN
 	ApplyStatus(_Character, "ASC_FROZEN", 6.0);
 	NOT DB_ASC_ChillQueue(_Character, _NewPotency);
+
+IF
+	CharacterStatusApplied(_Target, _Status, _)
+AND
+	_Status == "ASC_FROZEN"
+AND
+	HasActiveStatus(_Target, _Status, 1)
+THEN
+	RemoveStatus(_Target, "WET");
+
+
 EXITSECTION
 
 ENDEXITSECTION

@@ -9,7 +9,7 @@
         <field name="Ability" type="EnumerationStatObjectFieldDefinition" value="7" enumeration_type_name="SkillAbility" />
         <field name="Tier" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="SkillTier" />
         <field name="ActionPoints" type="IntegerStatObjectFieldDefinition" value="1" />
-        <field name="Cooldown" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Cooldown" type="IntegerStatObjectFieldDefinition" value="2" />
         <field name="Damage Multiplier" type="IntegerStatObjectFieldDefinition" value="75" />
         <field name="Damage Range" type="IntegerStatObjectFieldDefinition" value="0" />
         <field name="DamageType" type="EnumerationStatObjectFieldDefinition" value="7" enumeration_type_name="Damage Type" />
@@ -53,8 +53,8 @@
         <field name="Ability" type="EnumerationStatObjectFieldDefinition" value="5" enumeration_type_name="SkillAbility" />
         <field name="Tier" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="SkillTier" />
         <field name="ActionPoints" type="IntegerStatObjectFieldDefinition" value="1" />
-        <field name="Cooldown" type="IntegerStatObjectFieldDefinition" value="3" />
-        <field name="SkillProperties" type="StringStatObjectFieldDefinition" value="HASTED,100,3;" />
+        <field name="Cooldown" type="IntegerStatObjectFieldDefinition" value="4" />
+        <field name="SkillProperties" type="StringStatObjectFieldDefinition" value="ASC_PYRO_HASTED,100,3;" />
         <field name="TargetRadius" type="IntegerStatObjectFieldDefinition" value="13" />
         <field name="AddWeaponRange" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
         <field name="MemorizationRequirements" type="StringStatObjectFieldDefinition" value="FireSpecialist 1" />
@@ -81,8 +81,8 @@
         <field name="CastEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Skills_Fire_Cast_Aoe_Divine_Hand_02:Dummy_L_HandFX:cast" />
         <field name="TargetEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Skills_Fire_Haste_Impact_Root_01:root:cast" />
         <field name="TargetGroundEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Skills_Fire_Haste_Impact_Root_01:root:cast" />
-        <field name="Damage Multiplier" type="IntegerStatObjectFieldDefinition" value="30" />
-        <field name="Damage Range" type="IntegerStatObjectFieldDefinition" value="10" />
+        <field name="Damage Multiplier" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="Damage Range" type="IntegerStatObjectFieldDefinition" value="0" />
         <field name="DamageType" type="EnumerationStatObjectFieldDefinition" value="6" enumeration_type_name="Damage Type" />
       </fields>
     </stat_object>
@@ -591,6 +591,45 @@
         <field name="TargetEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Skills_Fire_Impact_02:root:hit" />
         <field name="TargetGroundEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Skills_Fire_Impact_02:root:hit" />
         <field name="SkillEffect" type="StringStatObjectFieldDefinition" value="b40cb293-c547-4f8a-91c3-36d5c422c8fd:Dummy_R_TentacleFX" />
+      </fields>
+    </stat_object>
+    <stat_object index="15" is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="EnemyFreezingTouch" />
+        <field name="SkillType" type="StringStatObjectFieldDefinition" value="Target" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="IsEnemySkill" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="Ability" type="EnumerationStatObjectFieldDefinition" value="6" enumeration_type_name="SkillAbility" />
+        <field name="ActionPoints" type="IntegerStatObjectFieldDefinition" value="2" />
+        <field name="Cooldown" type="IntegerStatObjectFieldDefinition" value="4" />
+        <field name="Damage Multiplier" type="IntegerStatObjectFieldDefinition" value="100" />
+        <field name="Damage Range" type="IntegerStatObjectFieldDefinition" value="10" />
+        <field name="DamageType" type="EnumerationStatObjectFieldDefinition" value="8" enumeration_type_name="Damage Type" />
+        <field name="SkillProperties" type="StringStatObjectFieldDefinition" value="ASC_TRIGGER_CHILLED,100,1;" />
+        <field name="TargetRadius" type="IntegerStatObjectFieldDefinition" value="2" />
+        <field name="AddWeaponRange" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="IsMelee" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="DeathType" type="EnumerationStatObjectFieldDefinition" value="8" enumeration_type_name="Death Type" />
+        <field name="CanTargetCharacters" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="CanTargetItems" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="CanTargetTerrain" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="Memory Cost" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="Magic Cost" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="UseCharacterStats" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="UseWeaponDamage" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="UseWeaponProperties" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Water_FreezingTouch" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Freezing Touch" />
+        <field name="FXScale" type="IntegerStatObjectFieldDefinition" value="100" />
+        <field name="PrepareAnimationInit" type="StringStatObjectFieldDefinition" value="skill_prepare_touch_01_start" />
+        <field name="PrepareAnimationLoop" type="StringStatObjectFieldDefinition" value="skill_prepare_touch_01_loop" />
+        <field name="PrepareEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Skills_Water_IceSpellHand_Prepare_001:Dummy_R_HandFX;RS3_FX_Skills_Water_HailStrike_Base_Prepare_001,Detach" />
+        <field name="CastAnimation" type="StringStatObjectFieldDefinition" value="skill_cast_target_touch_01_cast" />
+        <field name="CastSelfAnimation" type="StringStatObjectFieldDefinition" value="skill_cast_self_touch_01_cast" />
+        <field name="CastTextEvent" type="StringStatObjectFieldDefinition" value="cast" />
+        <field name="CastEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Skills_Water_WinterBlast_Hand_Cast_001:Dummy_R_HandFX;RS3_FX_Skills_Water_IceSpellHand_Cast_001:Dummy_CastFX:cast" />
+        <field name="TargetEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Skills_Water_WinterBlast_Base_CastTarget_001:root:cast" />
+        <field name="TargetGroundEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Skills_Water_WinterBlast_Base_CastTarget_001:root:cast" />
       </fields>
     </stat_object>
   </stat_objects>

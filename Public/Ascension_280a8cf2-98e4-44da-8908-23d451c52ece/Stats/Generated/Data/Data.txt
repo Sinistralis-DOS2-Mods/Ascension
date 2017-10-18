@@ -1,5 +1,7 @@
 key "SoftLevelCap","25"
 
+key "MonsterDamageBoostPerLevel","0.024"
+
 key "VitalityExponentialGrowth","1.25"
 
 key "VitalityStartingAmount","20"
@@ -26,7 +28,7 @@ key "WeaponAccuracyPenaltyPerLevel","-10"
 
 key "WeaponAccuracyPenaltyCap","-80"
 
-key "LeadershipRange","15"
+key "LeadershipRange","13"
 
 key "LeadershipDodgingBonus","3"
 
@@ -43,4 +45,6 @@ key "SkillAbilityCritMultiplierPerPoint","7"
 key "TalentSneakingDamageBonus","50"
 
 key "DamageToThrownWeightRatio","0"
+
+key "AbilityVitalityBonusPerPoint","2"
 

@@ -35,6 +35,7 @@ THEN
 	NOT DB_ASC_VisionTracker(_Caster, _TimerName);
 
 
+
 IF
 	CharacterUsedSkill(_Caster, "Shout_SpiritVision", _)
 THEN

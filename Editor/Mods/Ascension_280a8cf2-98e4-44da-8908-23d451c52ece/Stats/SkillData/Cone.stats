@@ -1,4 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <stats stat_object_definition_id="d3bd35ae-af62-42a2-b365-7091f909246b">
-  <stat_objects />
+  <stat_objects>
+    <stat_object index="0" is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="EnemyDragonBreath_Ice" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="EnemyDragonBreath" />
+        <field name="SkillType" type="StringStatObjectFieldDefinition" value="Cone" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="DamageType" type="EnumerationStatObjectFieldDefinition" value="8" enumeration_type_name="Damage Type" />
+        <field name="SkillProperties" type="StringStatObjectFieldDefinition" value="Freeze;ASC_TRIGGER_CHILL,100,1;" />
+        <field name="DeathType" type="EnumerationStatObjectFieldDefinition" value="8" enumeration_type_name="Death Type" />
+        <field name="SurfaceType" type="EnumerationStatObjectFieldDefinition" value="7" enumeration_type_name="Surface Type" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Frost Breath" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Unleash an icy wind, freezing enemies in place and dealing [1]." />
+        <field name="PrepareEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Char_Creature_Dragon_Prepare_Fire_01_Dummy_Ice:Dummy_CastFX" />
+        <field name="CastTextEvent" type="StringStatObjectFieldDefinition" value="castsurface" />
+        <field name="CastEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Char_Creature_Dragon_Cast_DragonBreath_Root_01:Dummy_Root;RS3_FX_Char_Creature_Dragon_Cast_DragonBreath_01_Dummy:Dummy_CastFX:cast;RS3_FX_Char_Creature_Dragon_Cast_DragonBreath_01:Dummy_Root:cast;RS3_FX_Char_Creature_Dragon_Cast_DragonBreath_Root_01_End:Dummy_Root:castend" />
+      </fields>
+    </stat_object>
+    <stat_object index="1" is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="EnemyFrostbreath" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="Flamebreath" />
+        <field name="SkillType" type="StringStatObjectFieldDefinition" value="Cone" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="IsEnemySkill" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="DamageType" type="EnumerationStatObjectFieldDefinition" value="8" enumeration_type_name="Damage Type" />
+        <field name="SkillProperties" type="StringStatObjectFieldDefinition" value="Freeze;ASC_TRIGGER_CHILL,100,1;" />
+        <field name="DeathType" type="EnumerationStatObjectFieldDefinition" value="8" enumeration_type_name="Death Type" />
+        <field name="SurfaceType" type="EnumerationStatObjectFieldDefinition" value="7" enumeration_type_name="Surface Type" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Water_WinterBreath" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="|Frost Breath|" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="|Let loose an icy wind, freezing enemies in place and dealing [1]|" />
+        <field name="StatsDescriptionParams" type="StringStatObjectFieldDefinition" value="Damage" />
+        <field name="PrepareEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Char_Creature_AbyssalVoid_Prepare_FrostBreath_Hand_01:Dummy_R_HandFX,Dummy_L_HandFX" />
+        <field name="CastEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Char_Creature_AbyssalVoid_Cast_FrostBreath_Hand_01:Dummy_L_HandFX,Dummy_R_HandFX;RS3_FX_Char_Creature_AbyssalVoid_Cast_FrostBreath_Root_01:Dummy_Root:cast;RS3_FX_Char_Creature_AbyssalVoid_Cast_FrostBreath_Dummy_01:Dummy_CastFX:cast" />
+        <field name="Memory Cost" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="Magic Cost" type="IntegerStatObjectFieldDefinition" value="0" />
+      </fields>
+    </stat_object>
+  </stat_objects>
 </stats>

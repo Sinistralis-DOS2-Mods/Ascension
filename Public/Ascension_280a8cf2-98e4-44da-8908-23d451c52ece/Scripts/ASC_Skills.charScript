@@ -5,6 +5,7 @@ INIT
 	INT:%ASC_IsSingleTarget
 	FLOAT:%ASC_HealPercent
 	
+	
 EVENTS
 
 EVENT OnDoTsTick

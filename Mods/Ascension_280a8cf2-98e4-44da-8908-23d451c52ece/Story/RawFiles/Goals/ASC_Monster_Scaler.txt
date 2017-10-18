@@ -1,50 +1,122 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
-DB_ASC_HIGHEST_LEVEL("HighestLevel",1);
+DB_ASC_ScalingEnabled(1);
+
+DB_ASC_HighestLevel("HighestLevel", 1, 0, 1);
+
+DB_ASC_Orb((ITEMGUID)25fb7595-b892-47c1-bf26-f553a7c0023f);
+
+DB_ASC_ScalingFlag("ASC_DecreaseMonsterDifficulty", -1);
+DB_ASC_ScalingFlag("ASC_IncreaseMonsterDifficulty", 1);
+
+DB_ASC_ResetFlag("ASC_ResetMonsterDifficulty");
+
+DB_ASC_ToggleFlag("ASC_ToggleMonsterDifficulty");
 KBSECTION
-IF
-	RegionStarted(_)
+PROC
+	PROC_ASC_AlterScalingDifficulty((STRING)_Flag)
 AND
-	DB_IsPlayer(_Character)
+	DB_ASC_ScalingFlag(_Flag, _ChangeMod)
+AND
+	DB_ASC_HighestLevel("HighestLevel", _Level, _CurrentMod, _Total)
+AND
+	IntegerSum(_CurrentMod, _ChangeMod, _NewMod)
+AND
+	IntegerSum(_Level, _NewMod, _NewTotal)
+THEN
+	NOT DB_ASC_HigherLevel("HighestLevel", _Level, _CurrentMod, _Total);
+	DB_ASC_HighestLevel("HighestLevel", _Level, _NewMod, _NewTotal);
+	GlobalClearFlag(_Flag);
+
+PROC
+	PROC_ASC_ResetScalingDifficulty((STRING)_Flag)
+AND
+	DB_ASC_ResetFlag(_Flag)
+AND
+	DB_ASC_HighestLevel("HighestLevel", _Level, _CurrentMod, _Total)
+THEN
+	NOT DB_ASC_HigherLevel("HighestLevel", _Level, _CurrentMod, _Total);
+	DB_ASC_HighestLevel("HighestLevel", _Level, 0, _Level);
+	GlobalClearFlag(_Flag);
+
+PROC
+	PROC_ASC_ToggleScalingDifficulty((STRING)_Flag)
+AND
+	DB_ASC_ToggleFlag(_Flag)
+AND
+	DB_ASC_ScalingEnabled(_IsEnabled)
+AND
+	IntegerSum(_IsEnabled, 1, _ModMe)
+AND
+	IntegerModulo(_ModMe, 2, _NewIsEnabled)
+THEN
+	NOT DB_ASC_ScalingEnabled(_IsEnabled)
+	DB_ASC_ScalingEnabled(_NewIsEnabled)
+
+PROC
+	PROC_ASC_UpdateLevel((CHARACTERGUID)_Character)
 AND
 	CharacterGetLevel(_Character, _Level)
 AND
-	DB_ASC_HIGHEST_LEVEL("HighestLevel", _HighestLevel)
+	DB_ASC_HighestLevel("HighestLevel", _HighestLevel, _Mod, _LevelScale)
 AND
 	_Level > _HighestLevel
+AND
+	IntegerSum(_Level, _Mod, _NewScale)
 THEN
-	NOT DB_ASC_HIGHEST_LEVEL("HighestLevel", _HighestLevel);
-	DB_ASC_HIGHEST_LEVEL("HighestLevel", _Level);
+	NOT DB_ASC_HighestLevel("HighestLevel", _HighestLevel, _Mod, _LevelScale);
+	DB_ASC_HighestLevel("HighestLevel", _Level, _Mod, _NewScale);
 
-
-IF
-	CharacterLeveledUp(_Character)
-AND
-	DB_IsPlayer(_Character)
-AND
-	CharacterGetLevel(_Character, _Level)
-AND
-	DB_ASC_HIGHEST_LEVEL("HighestLevel", _HighestLevel)
-AND
-	_Level > _HighestLevel
-THEN
-	NOT DB_ASC_HIGHEST_LEVEL("HighestLevel", _HighestLevel);
-	DB_ASC_HIGHEST_LEVEL("HighestLevel", _Level);
 
 
 IF
 	ObjectEnteredCombat((CHARACTERGUID)_Character, _)
 AND
+	DB_ASC_ScalingEnabled(1)
+AND
 	NOT DB_IsPlayer(_Character)
 AND
 	CharacterGetLevel(_Character, _Level)
 AND
-	DB_ASC_HIGHEST_LEVEL("HighestLevel", _HighestLevel)
+	DB_ASC_HighestLevel("HighestLevel", _, _, _HighestLevel)
 AND
 	_Level < _HighestLevel
 THEN
 	CharacterLevelUpTo(_Character, _HighestLevel);
+
+IF
+	CharacterUsedItem(_Character, _Item)
+AND
+	DB_ASC_Orb(_Item)
+THEN
+	Proc_StartDialog(0, "ASC_OrbOfStrife", _Item, _Character);
+
+IF
+	RegionStarted(_)
+AND
+	DB_IsPlayer(_Character)
+THEN
+	PROC_ASC_UpdateLevel(_Character);
+
+IF
+	CharacterLeveledUp(_Character)
+AND
+	DB_IsPlayer(_Character)
+THEN
+	PROC_ASC_UpdateLevel(_Character);
+
+IF
+	GlobalFlagSet(_Flag)
+THEN
+	PROC_ASC_AlterScalingDifficulty(_Flag);
+	PROC_ASC_ResetScalingDifficulty(_Flag);
+	PROC_ASC_ToggleScalingDifficulty(_Flag);
+
+IF
+	GlobalFlagCleared(_Flag)
+THEN
+	PROC_ASC_ToggleScalingDifficulty(_Flag);
 EXITSECTION
 
 ENDEXITSECTION
