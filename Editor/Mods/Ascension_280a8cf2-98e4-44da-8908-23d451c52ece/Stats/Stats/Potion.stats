@@ -173,5 +173,45 @@
         <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="statIcons_Frozen" />
       </fields>
     </stat_object>
+    <stat_object index="16" is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="QUEST_Tea_Brand_A" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Story" />
+        <field name="RootTemplate" type="RootTemplateStatObjectFieldDefinition" value="28c858bc-ed95-43eb-85a7-7aadaa53f3de" />
+        <field name="Value" type="IntegerStatObjectFieldDefinition" value="150" />
+        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="2" />
+        <field name="InventoryTab" type="EnumerationStatObjectFieldDefinition" value="4" enumeration_type_name="InventoryTabs" />
+        <field name="MinLevel" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="MaxLevel" type="IntegerStatObjectFieldDefinition" value="20" />
+        <field name="SingleHanded" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="TwoHanded" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Ranged" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="DualWielding" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="WarriorLore" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="RangerLore" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="RogueLore" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="FireSpecialist" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="WaterSpecialist" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="AirSpecialist" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="EarthSpecialist" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Necromancy" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Polymorph" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Summoning" type="IntegerStatObjectFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object index="17" is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="QUEST_Tea_Cup_Brand_A" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Story" />
+        <field name="RootTemplate" type="RootTemplateStatObjectFieldDefinition" value="d01218dd-f4bb-47fd-9847-2012fb7bde3b" />
+        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="3" />
+        <field name="InventoryTab" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="InventoryTabs" />
+        <field name="Strength" type="EnumerationStatObjectFieldDefinition" value="131" enumeration_type_name="Penalty PreciseQualifier" />
+        <field name="Finesse" type="EnumerationStatObjectFieldDefinition" value="131" enumeration_type_name="Penalty PreciseQualifier" />
+        <field name="Intelligence" type="EnumerationStatObjectFieldDefinition" value="131" enumeration_type_name="Penalty PreciseQualifier" />
+        <field name="Constitution" type="EnumerationStatObjectFieldDefinition" value="131" enumeration_type_name="Penalty PreciseQualifier" />
+        <field name="Wits" type="EnumerationStatObjectFieldDefinition" value="161" enumeration_type_name="Penalty PreciseQualifier" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>
