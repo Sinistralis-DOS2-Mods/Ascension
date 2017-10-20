@@ -1,0 +1,46 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_ASC_VisionTracker((CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, "Timer");
+KBSECTION
+PROC
+	PROC_ASC_ToggleVision((CHARACTERGUID)_Caster)
+AND
+	HasActiveStatus(_Caster, "SPIRIT_VISION", 1)
+AND
+	NOT DB_ASC_VisionTracker(_Caster, _)
+AND
+	CharacterGetDisplayName(_Caster, _, _Name)
+AND
+	StringConcatenate("ASC_VisionTimer_", _Name, _TimerName)
+THEN
+	TimerLaunch(_TimerName, 500);
+	DB_ASC_VisionTracker(_Caster, _TimerName);
+
+
+PROC
+	PROC_ASC_ToggleVision((CHARACTERGUID)_Caster)
+AND
+	HasActiveStatus(_Caster, "SPIRIT_VISION", 0)
+THEN
+	ApplyStatus(_Caster, "SPIRIT_VISION", -1.0);
+	CharacterStatusText(_Caster, "On");
+
+IF
+	TimerFinished(_TimerName)
+AND
+	DB_ASC_VisionTracker(_Caster, _TimerName)
+THEN
+	RemoveStatus(_Caster, "SPIRIT_VISION");
+	NOT DB_ASC_VisionTracker(_Caster, _TimerName);
+
+
+
+IF
+	CharacterUsedSkill(_Caster, "Shout_SpiritVision", _)
+THEN
+	PROC_ASC_ToggleVision(_Caster);
+
+EXITSECTION
+
+ENDEXITSECTION
