@@ -42,6 +42,7 @@ AND
 	HasActiveStatus(_Target, _Slave, 0)
 THEN
 	ApplyStatus(_Target, _Slave, 5.96);
+
 EXITSECTION
 
 ENDEXITSECTION

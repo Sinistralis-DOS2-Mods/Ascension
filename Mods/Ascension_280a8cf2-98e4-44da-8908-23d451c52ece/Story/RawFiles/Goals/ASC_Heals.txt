@@ -1,9 +1,9 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
-DB_ASC_HoTs("REGENERATION", "ASC_TRIGGER_RESTORATION", .020, "ASC_OnRestoration");
+DB_ASC_HoTs("REGENERATION", "ASC_TRIGGER_RESTORATION", .015, "ASC_OnRestoration");
 
-DB_ASC_Heals("CHAIN_HEAL", .030);
+DB_ASC_Heals("CHAIN_HEAL", .025);
 KBSECTION
 IF
 	CharacterStatusRemoved(_Target, _Master, _)

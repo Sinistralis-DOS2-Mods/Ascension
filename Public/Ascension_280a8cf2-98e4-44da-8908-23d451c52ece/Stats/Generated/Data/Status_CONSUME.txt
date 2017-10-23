@@ -312,3 +312,17 @@ data "ImmuneFlag" "ChilledImmunity"
 data "DisplayName" "ASC_FAKE_FREEZE_DisplayName"
 data "DisplayNameRef" "Chilled"
 
+new entry "ASC_BOW"
+type "StatusData"
+data "StatusType" "CONSUME"
+data "StatsId" "Stats_ASC_Trigger"
+data "StackId" "Stack_ASC_BOWTYPE"
+data "ForGameMaster" "No"
+
+new entry "ASC_CROSSBOW"
+type "StatusData"
+data "StatusType" "CONSUME"
+data "StatsId" "Stats_ASC_Trigger"
+data "StackId" "Stack_ASC_BOWTYPE"
+data "ForGameMaster" "No"
+

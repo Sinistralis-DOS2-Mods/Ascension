@@ -390,7 +390,7 @@
         <field name="UseWeaponProperties" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
         <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Water_Restoration" />
         <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Restoration" />
-        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Restore vitality for target character. Cures Poison effects and Bleeding. Heals for an additonal 2% of targets maximum health per skill in Hydrosophist." />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Restore vitality for target character. Cures Poison effects and Bleeding. Heals for an additonal 1.5% of targets maximum health per skill in Hydrosophist." />
         <field name="FXScale" type="IntegerStatObjectFieldDefinition" value="100" />
         <field name="PrepareAnimationInit" type="StringStatObjectFieldDefinition" value="skill_prepare_divine_01_start" />
         <field name="PrepareAnimationLoop" type="StringStatObjectFieldDefinition" value="skill_prepare_divine_01_loop" />

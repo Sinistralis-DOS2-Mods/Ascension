@@ -1,6 +1,7 @@
 INIT
     CHARACTER:__Me
     CHARACTER:%ASC_Source
+	CHARACTER:%ASC_Target
     STRING:%ASC_Skill
 	INT:%ASC_IsSingleTarget
 	FLOAT:%ASC_HealPercent

@@ -1,0 +1,37 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_ASC_AnimationCancel((CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000);
+KBSECTION
+IF
+	CharacterUsedSkillOnTarget(_Caster, (CHARACTERGUID)_Target, "Projectile_Ricochet", _)
+AND
+	HasActiveStatus(_Caster, "ASC_BOW", 1)
+THEN
+	CharacterUseSkill(_Caster, "Projectile_ASC_BOW_Ricochet", _Target, 1, 1);
+	CharacterUseSkill(_Caster, "Projectile_ASC_Test", _Target, 1, 1);
+	CharacterSetAnimationOverride(_Caster, "skill_attack_precision_01_cast");
+	TimerLaunch("AnimationCancel", 800);
+	DB_ASC_AnimationCancel(_Caster);
+	
+IF
+	CharacterUsedSkillOnTarget(_Caster, (CHARACTERGUID)_Target, "Projectile_Ricochet", _)
+AND
+	HasActiveStatus(_Caster, "ASC_CROSSBOW", 1)
+THEN
+	CharacterUseSkill(_Caster, "Projectile_ASC_Test", _Target, 0, 1);
+	CharacterUseSkill(_Caster, "Projectile_ASC_CROSSBOW_Ricochet", _Target, 1, 1);
+/*
+IF
+	CharacterUsedSkillOnTarget(_Caster, (CHARACTERGUID)_Target, "Projectile_ASC_BOW_Ricochet", _)
+*/
+
+IF
+	TimerFinished("AnimationCancel")
+AND
+	DB_ASC_AnimationCancel(_Target)
+THEN
+	CharacterSetAnimationOverride(_Target, "");
+EXITSECTION
+
+ENDEXITSECTION
