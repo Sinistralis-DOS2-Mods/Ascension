@@ -3,7 +3,18 @@ SubGoalCombiner SGC_AND
 INITSECTION
 
 KBSECTION
+PROC
+	PROC_ASC_ApplyDamageFromSourceToTarget((CHARACTERGUID)_Source, (CHARACTERGUID)_Target, (STRING)_Skill, (INTEGER)_IsSingleTarget)
+THEN
+	SetVarInteger(_Source, "ASC_IsSingleTarget", _IsSingleTarget);
+	SetVarFixedString(_Source, "ASC_Skill", _Skill);
+	CharacterCharacterSetEvent(_Source, _Target, "ASC_ApplyDamageFromSourceToTarget");
 
+PROC
+	PROC_ASC_ApplyHealingToTarget((CHARACTERGUID)_Target, (REAL)_Amount)
+THEN
+	SetVarFloat(_Target, "ASC_HealPercent", _Amount);
+	SetStoryEvent(_Target, "ASC_ApplyHealingToTarget");
 EXITSECTION
 
 ENDEXITSECTION

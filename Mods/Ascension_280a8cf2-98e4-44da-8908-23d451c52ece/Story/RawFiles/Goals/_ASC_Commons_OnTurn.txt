@@ -19,18 +19,15 @@ AND
 AND
 	HasActiveStatus(_Target, _Slave, 0)
 THEN
-	SetVarInteger(_Source, "ASC_IsSingleTarget", 1);
-	SetVarFixedString(_Source, "ASC_Skill", _Skill);
-	CharacterCharacterSetEvent(_Source, _Target, "ASC_ApplyDamageFromSourceToTarget");
+	PROC_ASC_ApplyDamageFromSourceToTarget(_Source, _Target, _Skill, 1);
 
 IF
 	ObjectTurnStarted((CHARACTERGUID)_Target)
 AND
 	DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _Skill)
 THEN
-	SetVarInteger(_Source, "ASC_IsSingleTarget", 1);
-	SetVarFixedString(_Source, "ASC_Skill", _Skill);
-	CharacterCharacterSetEvent(_Source, _Target, "ASC_ApplyDamageFromSourceToTarget");
+	PROC_ASC_ApplyDamageFromSourceToTarget(_Source, _Target, _Skill, 1);
+
 
 IF
 	CharacterStatusRemoved(_Target, _Slave, _)

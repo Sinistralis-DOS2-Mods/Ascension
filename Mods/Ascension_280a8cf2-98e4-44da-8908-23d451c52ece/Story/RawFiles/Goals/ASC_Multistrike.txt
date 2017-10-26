@@ -24,9 +24,8 @@ THEN
 	RemoveStatus(_Target, _Status);
 	NOT DB_ASC_MultistrikeTargets(_Target, _Source, _HitCount);
 	DB_ASC_MultiStrikeTargets(_Target, _Source, _NewHitCount);
-	SetVarInteger(_Source, "ASC_IsSingleTarget", 1);
-	SetVarFixedString(_Source, "ASC_Skill", _NewSkill);
-	CharacterCharacterSetEvent(_Source, _Target, "ASC_ApplyDamageFromSourceToTarget");
+	PROC_ASC_ApplyDamageFromSourceToTarget(_Source, _Target, _Skill, 1);
+
 
 IF
 	CharacterStatusApplied(_Target, _Status, (CHARACTERGUID)_Source)
@@ -37,9 +36,8 @@ AND
 THEN
 	RemoveStatus(_Target, _Status);
 	DB_ASC_MultistrikeTargets(_Target, _Source, 1);
-	SetVarInteger(_Source, "ASC_IsSingleTarget", 1);
-	SetVarFixedString(_Source, "ASC_Skill", _Skill);
-	CharacterCharacterSetEvent(_Source, _Target, "ASC_ApplyDamageFromSourceToTarget");
+	PROC_ASC_ApplyDamageFromSourceToTarget(_Source, _Target, _Skill, 1);
+
 
 
 IF

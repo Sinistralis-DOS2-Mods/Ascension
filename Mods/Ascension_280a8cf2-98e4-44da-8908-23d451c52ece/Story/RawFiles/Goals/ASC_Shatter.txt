@@ -34,9 +34,7 @@ IF
 AND
 	DB_ASC_ShatterTracker(_Target, _Source, _Status, _Skill)
 THEN
-	SetVarInteger(_Source, "ASC_IsSingleTarget", 1);
-	SetVarFixedString(_Source, "ASC_Skill", _Skill);
-	CharacterCharacterSetEvent(_Source, _Target, "ASC_ApplyDamageFromSourceToTarget");
+	PROC_ASC_ApplyDamageFromSourceToTarget(_Source, _Target, _Skill, 1);
 	TimerLaunch("ShatterTimer2", 200);
 
 IF

@@ -29,8 +29,7 @@ AND
 THEN
 	ApplyStatus(_Target, _Slave, 5.96);
 	DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, "", _Event);
-	SetVarFloat(_Target, "ASC_HealPercent", _HealMod);
-	SetStoryEvent(_Target, "ASC_Heal");
+	PROC_ASC_ApplyHealingToTarget(_Target, _HealMod);
 	
 IF
 	StoryEvent((CHARACTERGUID)_Target, _Event)
@@ -47,8 +46,8 @@ AND
 AND
 	_HealMod > 0.0
 THEN
-	SetVarFloat(_Target, "ASC_HealPercent", _HealMod);
-	SetStoryEvent(_Target, "ASC_ApplyHealingToTarget");
+	PROC_ASC_ApplyHealingToTarget(_Target, _HealMod);
+
 
 
 IF
@@ -64,8 +63,8 @@ AND
 AND
 	_HealMod > 0.0
 THEN
-	SetVarFloat(_Target, "ASC_HealPercent", _HealMod);
-	SetStoryEvent(_Target, "ASC_ApplyHealingToTarget");
+	PROC_ASC_ApplyHealingToTarget(_Target, _HealMod);
+
 	
 EXITSECTION
 
