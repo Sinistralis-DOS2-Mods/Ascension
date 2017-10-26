@@ -1,48 +1,47 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
-DB_ASC_OnTurn((CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, (CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, "Master", "Slave", "Skill", "Event");
+DB_ASC_OnTurn((CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, (CHARACTERGUID)NULL_00000000-0000-0000-0000-000000000000, "Master", "Slave", "Skill");
 KBSECTION
 IF
 	CharacterStatusRemoved(_Target, _Master, _)
 AND
-	DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _Skill, _Event)
+	DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _Skill)
 THEN
-	NOT DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _Skill, _Event);
+	NOT DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _Skill);
 
 IF
 	CharacterStatusRemoved(_Target, _Slave, _)
 AND
 	CharacterIsInCombat(_Target, 0)
 AND
-	DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _Skill, _Event)
+	DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _Skill)
 AND
 	HasActiveStatus(_Target, _Slave, 0)
 THEN
-	SetVarObject(_Target, "ASC_Source", _Source);
-	SetVarString(_Target, "ASC_Skill", _Skill);
-	SetStoryEvent(_Target, _Event);
+	SetVarInteger(_Source, "ASC_IsSingleTarget", 1);
+	SetVarFixedString(_Source, "ASC_Skill", _Skill);
+	CharacterCharacterSetEvent(_Source, _Target, "ASC_ApplyDamageFromSourceToTarget");
 
 IF
 	ObjectTurnStarted((CHARACTERGUID)_Target)
 AND
-	DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _Skill, _Event)
+	DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _Skill)
 THEN
-	SetVarObject(_Target, "ASC_Source", _Source);
-	SetVarString(_Target, "ASC_Skill", _Skill);
-	SetStoryEvent(_Target, _Event);
+	SetVarInteger(_Source, "ASC_IsSingleTarget", 1);
+	SetVarFixedString(_Source, "ASC_Skill", _Skill);
+	CharacterCharacterSetEvent(_Source, _Target, "ASC_ApplyDamageFromSourceToTarget");
 
 IF
 	CharacterStatusRemoved(_Target, _Slave, _)
 AND
-	DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _Skill, _Event)
+	DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _Skill)
 AND
 	HasActiveStatus(_Target, _Master, 1)
 AND
 	HasActiveStatus(_Target, _Slave, 0)
 THEN
 	ApplyStatus(_Target, _Slave, 5.96);
-
 EXITSECTION
 
 ENDEXITSECTION

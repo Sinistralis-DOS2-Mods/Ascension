@@ -48,3 +48,5 @@ key "DamageToThrownWeightRatio","0"
 
 key "AbilityVitalityBonusPerPoint","2"
 
+key "RangeBoostedGlobalCap","35"
+

@@ -151,5 +151,11 @@
         <field name="Value" type="FloatStatObjectFieldDefinition" value="2" />
       </fields>
     </stat_object>
+    <stat_object index="25" is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="RangeBoostedGlobalCap" />
+        <field name="Value" type="FloatStatObjectFieldDefinition" value="35" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

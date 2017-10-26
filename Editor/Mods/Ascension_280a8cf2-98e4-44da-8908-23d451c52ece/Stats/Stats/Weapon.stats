@@ -318,10 +318,10 @@
         <field name="Damage Type" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="Damage Type" />
         <field name="Damage" type="IntegerStatObjectFieldDefinition" value="0" />
         <field name="Damage Range" type="IntegerStatObjectFieldDefinition" value="15" />
-        <field name="DamageFromBase" type="IntegerStatObjectFieldDefinition" value="77" />
+        <field name="DamageFromBase" type="IntegerStatObjectFieldDefinition" value="60" />
         <field name="CriticalDamage" type="IntegerStatObjectFieldDefinition" value="150" />
         <field name="CriticalChance" type="IntegerStatObjectFieldDefinition" value="0" />
-        <field name="WeaponRange" type="IntegerStatObjectFieldDefinition" value="1300" />
+        <field name="WeaponRange" type="IntegerStatObjectFieldDefinition" value="0" />
         <field name="Durability" type="IntegerStatObjectFieldDefinition" value="0" />
         <field name="DurabilityDegradeSpeed" type="EnumerationStatObjectFieldDefinition" value="7" enumeration_type_name="Qualifier" />
         <field name="Value" type="IntegerStatObjectFieldDefinition" value="75" />
@@ -355,7 +355,7 @@
         <field name="DamageFromBase" type="IntegerStatObjectFieldDefinition" value="70" />
         <field name="CriticalDamage" type="IntegerStatObjectFieldDefinition" value="150" />
         <field name="CriticalChance" type="IntegerStatObjectFieldDefinition" value="0" />
-        <field name="WeaponRange" type="IntegerStatObjectFieldDefinition" value="650" />
+        <field name="WeaponRange" type="IntegerStatObjectFieldDefinition" value="0" />
         <field name="Durability" type="IntegerStatObjectFieldDefinition" value="0" />
         <field name="DurabilityDegradeSpeed" type="EnumerationStatObjectFieldDefinition" value="7" enumeration_type_name="Qualifier" />
         <field name="Value" type="IntegerStatObjectFieldDefinition" value="100" />

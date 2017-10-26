@@ -1,5 +1,0 @@
-#INCLUDE ASC_Skills
-
-
-INIT
-	USING ASC_Skills

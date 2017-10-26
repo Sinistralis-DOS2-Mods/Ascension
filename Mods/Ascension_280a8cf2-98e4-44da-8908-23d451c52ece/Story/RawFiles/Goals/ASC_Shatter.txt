@@ -10,13 +10,13 @@ AND
 AND
 	DB_ASC_Chill(_Status, _Potency)
 AND
-	IntegertoString(_Potency, _StringPotency)
-AND
 	HasActiveStatus(_Target, _Status, 1)
+AND
+	IntegertoString(_Potency, _StringPotency)
 AND
 	StringConcatenate("Projectile_ASC_Shatter_", _StringPotency, _ShatterEffect)
 THEN
-	DB_ASC_ShatterTracker(_Target, _Source, _Skill, _Status);
+	DB_ASC_ShatterTracker(_Target, _Source, _Status, _ShatterEffect);
 	TimerLaunch("ShatterTimer", 900);
 
 IF
@@ -34,9 +34,9 @@ IF
 AND
 	DB_ASC_ShatterTracker(_Target, _Source, _Status, _Skill)
 THEN
-	SetVarObject(_Target, "ASC_Source", _Source);
-	SetVarString(_Target, "ASC_Skill", _Skill);
-	SetStoryEvent(_Target, "ASC_Shatter");
+	SetVarInteger(_Source, "ASC_IsSingleTarget", 1);
+	SetVarFixedString(_Source, "ASC_Skill", _Skill);
+	CharacterCharacterSetEvent(_Source, _Target, "ASC_ApplyDamageFromSourceToTarget");
 	TimerLaunch("ShatterTimer2", 200);
 
 IF
@@ -44,7 +44,7 @@ IF
 AND
 	DB_ASC_ShatterTracker(_Target, _Source, _Status, _Skill)
 THEN
-	NOT DB_ASC_ShatterTracker(_Target, _Status);
+	NOT DB_ASC_ShatterTracker(_Target, _Source, _Status, _Skill);
 	RemoveStatus(_Target, _Status);
 EXITSECTION
 

@@ -48,7 +48,7 @@ AND
 	_HealMod > 0.0
 THEN
 	SetVarFloat(_Target, "ASC_HealPercent", _HealMod);
-	SetStoryEvent(_Target, "ASC_Heal");
+	SetStoryEvent(_Target, "ASC_ApplyHealingToTarget");
 
 
 IF
@@ -65,7 +65,7 @@ AND
 	_HealMod > 0.0
 THEN
 	SetVarFloat(_Target, "ASC_HealPercent", _HealMod);
-	SetStoryEvent(_Target, "ASC_Heal");
+	SetStoryEvent(_Target, "ASC_ApplyHealingToTarget");
 	
 EXITSECTION
 

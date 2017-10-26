@@ -1,4 +1,3 @@
-ECHO is on.
 Projects/*
 #Story files that can be compiled by the user (only raw files needed).
 Mods/Ascension_280a8cf2-98e4-44da-8908-23d451c52ece/meta.lsx
@@ -10,6 +9,7 @@ Mods/Ascension_280a8cf2-98e4-44da-8908-23d451c52ece/Story/story.div.osi
 Mods/Ascension_280a8cf2-98e4-44da-8908-23d451c52ece/Story/story_ac.dat
 Mods/Ascension_280a8cf2-98e4-44da-8908-23d451c52ece/Story/RawFiles/story_definitions.div
 Mods/Ascension_280a8cf2-98e4-44da-8908-23d451c52ece/Story/RawFiles/story_header.div
+Mods/Ascension_280a8cf2-98e4-44da-8908-23d451c52ece/Levels/*/WorldMap/Minimap*
 
 #Assets
 Public/Ascension_280a8cf2-98e4-44da-8908-23d451c52ece/Assets/*

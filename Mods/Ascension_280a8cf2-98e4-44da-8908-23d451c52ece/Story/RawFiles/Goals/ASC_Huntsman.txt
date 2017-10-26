@@ -9,7 +9,7 @@ AND
 	HasActiveStatus(_Caster, "ASC_BOW", 1)
 THEN
 	CharacterUseSkill(_Caster, "Projectile_ASC_BOW_Ricochet", _Target, 1, 1);
-	
+
 IF
 	CharacterUsedSkillOnTarget(_Caster, (CHARACTERGUID)_Target, "Projectile_Ricochet", _)
 AND

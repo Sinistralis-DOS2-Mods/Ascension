@@ -16,7 +16,7 @@ AND
 	DB_ASC_DoTs(_Master, _Slave, _Skill)
 THEN
 	ApplyStatus(_Target, _Slave, 5.96);
-	DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _Skill, "ASC_DoTsTick");
+	DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _Skill);
 
 IF
 	CharacterStatusApplied(_Target, _Status, _)
@@ -27,9 +27,9 @@ AND
 AND
 	HasActiveStatus(_Target, _Master, 1)
 AND
-	DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _Skill, "ASC_DoTsTick")
+	DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _Skill)
 THEN
-	NOT DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _Skill, "ASC_DoTsTick");
+	NOT DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _Skill);
 	RemoveStatus(_Target, _Master);
 	RemoveStatus(_Target, _Slave);
 EXITSECTION

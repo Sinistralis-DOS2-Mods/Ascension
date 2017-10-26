@@ -1,0 +1,146 @@
+INIT
+	SKILL:%ASC_DamageSkill
+	FLOAT:%ASC_HealPercent
+
+EVENTS
+
+EVENT ApplyHealingToTarget
+VARS
+	CHARACTER:_Target
+	FLOAT: _HealPercent
+ON
+	OnCharacterEvent(_Target, "ASC_ApplyHealingToTarget")
+ACTIONS
+	IF "c1"
+		GetVar(_HealPercent, _Target, "ASC_HealPercent")
+	THEN
+		CharacterHeal(_Target, _HealPercent)
+	ENDIF
+
+EVENT ApplyDamageFromSourceToTarget
+VARS
+	CHARACTER:_Source
+	CHARACTER:_Target
+    INT:_Level
+	INT:_IsSingleTarget
+	FLOAT3:_ExplodeLoc
+	FLOAT: _ExplodeY
+	FIXEDSTRING:_Skill
+ON
+    OnCharacterCharacterEvent(_Source, _Target, "ASC_ApplyDamageFromSourceToTarget")
+ACTIONS
+    IF "c1&c2&c3&c4&c5"
+		GetVar(_Skill, _Source, "ASC_Skill")
+		GetVar(_IsSingleTarget, _Source, "ASC_IsSingleTarget")
+		GetLevelOverrideCurrent(_Source, _Level)
+		GetPosition(_Target, _ExplodeLoc)
+		GetY(_ExplodeLoc, _ExplodeY)
+	THEN
+		CallFunction(_Skill)
+		IF "c1"
+			IsEqual(_IsSingleTarget, 1)
+		THEN
+			Add(_ExplodeY, 2.75)
+			SetY(_ExplodeLoc, _ExplodeY)
+		ExplodeAt(_ExplodeLoc, %ASC_DamageSkill, _Level, _Source)
+		ENDIF
+	ENDIF
+
+
+EVENT Projectile_ASC_DoT_PoisonDartStart
+ON
+	OnFunction("Projectile_ASC_DoT_PoisonDartStart")
+ACTIONS
+	Set(%ASC_DamageSkill, Projectile_ASC_DoT_PoisonDartStart)
+	
+EVENT Projectile_ASC_DoT_Contaminate
+ON
+	OnFunction("Projectile_ASC_DoT_Contaminate")
+ACTIONS
+	Set(%ASC_DamageSkill, Projectile_ASC_DoT_Contaminate)
+	
+EVENT Projectile_ASC_DoT_PoisonWave
+ON
+	OnFunction("Projectile_ASC_DoT_PoisonWave")
+ACTIONS
+	Set(%ASC_DamageSkill, Projectile_ASC_DoT_PoisonWave)
+	
+EVENT Projectile_ASC_HYBRID_PyroclasticRock
+ON
+	OnFunction("Projectile_ASC_HYBRID_PyroclasticRock")
+ACTIONS
+	Set(%ASC_DamageSkill, Projectile_ASC_HYBRID_PyroclasticRock)
+	
+EVENT Projectile_ASC_HYBRID_RockSpikes
+ON
+	OnFunction("Projectile_ASC_HYBRID_RockSpikes")
+ACTIONS
+	Set(%ASC_DamageSkill, Projectile_ASC_HYBRID_RockSpikes)
+
+EVENT Projectile_ASC_DIMINISH_IceFan
+ON
+	OnFunction("Projectile_ASC_DIMINISH_IceFan")
+ACTIONS
+	Set(%ASC_DamageSkill, Projectile_ASC_DIMINISH_IceFan)
+
+EVENT Projectile_ASC_DIMINISH_IceFan1
+ON
+	OnFunction("Projectile_ASC_DIMINISH_IceFan1")
+ACTIONS
+	Set(%ASC_DamageSkill, Projectile_ASC_DIMINISH_IceFan1)
+
+EVENT Projectile_ASC_DIMINISH_IceFan2
+ON
+	OnFunction("Projectile_ASC_DIMINISH_IceFan2")
+ACTIONS
+	Set(%ASC_DamageSkill, Projectile_ASC_DIMINISH_IceFan2)
+
+EVENT Projectile_ASC_DIMINISH_FlamingDaggers
+ON
+	OnFunction("Projectile_ASC_DIMINISH_FlamingDaggers")
+ACTIONS
+	Set(%ASC_DamageSkill, Projectile_ASC_DIMINISH_FlamingDaggers)
+
+EVENT Projectile_ASC_DIMINISH_FlamingDaggers1
+ON
+	OnFunction("Projectile_ASC_DIMINISH_FlamingDaggers1")
+ACTIONS
+	Set(%ASC_DamageSkill, Projectile_ASC_DIMINISH_FlamingDaggers1)
+
+EVENT Projectile_ASC_DIMINISH_FlamingDaggers2
+ON
+	OnFunction("Projectile_ASC_DIMINISH_FlamingDaggers2")
+ACTIONS
+	Set(%ASC_DamageSkill, Projectile_ASC_DIMINISH_FlamingDaggers2)
+
+EVENT Projectile_ASC_Shatter_1
+ON
+	OnFunction("Projectile_ASC_Shatter_1")
+ACTIONS
+	Set(%ASC_DamageSkill, Projectile_ASC_Shatter_1)
+
+EVENT Projectile_ASC_Shatter_2
+ON
+	OnFunction("Projectile_ASC_Shatter_2")
+ACTIONS
+	Set(%ASC_DamageSkill, Projectile_ASC_Shatter_2)
+
+EVENT Projectile_ASC_Shatter_3
+ON
+	OnFunction("Projectile_ASC_Shatter_3")
+ACTIONS
+	Set(%ASC_DamageSkill, Projectile_ASC_Shatter_3)
+
+EVENT Projectile_ASC_Shatter_4
+ON
+	OnFunction("Projectile_ASC_Shatter_4")
+ACTIONS
+	Set(%ASC_DamageSkill, Projectile_ASC_Shatter_4)
+
+EVENT Projectile_ASC_Shatter_5
+ON
+	OnFunction("Projectile_ASC_Shatter_5")
+ACTIONS
+	Set(%ASC_DamageSkill, Projectile_ASC_Shatter_5)
+
+
