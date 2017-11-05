@@ -1,0 +1,56 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+/*
+	Based on a given status, we will be building a new skill from scratch that will match up to the final product.
+	This table is to get the weapon modifier.
+*/
+DB_ASC_SkillModifier("ASC_BOW", "BOW");
+DB_ASC_SkillModifier("ASC_CROSSBOW", "CROSSBOW");
+DB_ASC_SkillModifier("ASC_FORK", "FORK");
+DB_ASC_SkillModifier("ASC_DAMAGE1", "DAMAGE1");
+DB_ASC_SkillModifier("ASC_RADIUS1", "RADIUS1");
+KBSECTION
+// ASC_FAKE_Ricochet_TARGET
+// ASC_FAKE_Ricochet_NONE
+// ASC_FAKE_Ricochet_POINT
+
+// In Script
+// Build Actual Skill ASC_BOW_Ricochet
+// Store TargetType (TARGET, NONE, POINT) so I know how to aim it
+
+
+IF
+	CharacterUsedSkillOnTarget(_Caster, (CHARACTERGUID)_Target, "Projectile_Ricochet", _)
+AND
+	HasActiveStatus(_Caster, "ASC_BOW", 1)
+THEN
+	CharacterSetFightMode(_Caster, 1, 1);
+	CharacterSetAnimationOverride(_Caster, "skill_attack_precision_01_cast");
+	CharacterUseSkill(_Caster, "Projectile_ASC_BOW_Ricochet", _Target, 1, 1);
+
+IF
+	CharacterUsedSkillOnTarget(_Caster, (CHARACTERGUID)_Target, "Projectile_Ricochet", _)
+AND
+	HasActiveStatus(_Caster, "ASC_CROSSBOW", 1)
+THEN
+	CharacterUseSkill(_Caster, "Projectile_ASC_CROSSBOW_Ricochet", _Target, 1, 1);
+	
+
+IF
+	CharacterUsedSkillOnTarget(_Caster, _Target, _Skill, _)
+THEN
+	CharacterStatusText(_Caster, "Used Skill on Target");
+
+IF
+	CharacterUsedSkill(_Caster, _Skill, _)
+THEN
+	CharacterStatusText(_Caster, "Used Skill");
+
+IF
+	CharacterUsedSkillAtPosition(_Caster, _, _, _, _Skill, _)
+THEN
+	CharacterStatusText(_Caster, "Used Skill at Position");
+EXITSECTION
+
+ENDEXITSECTION

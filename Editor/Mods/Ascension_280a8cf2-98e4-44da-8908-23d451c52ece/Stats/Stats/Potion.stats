@@ -1,216 +1,216 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <stats stat_object_definition_id="48e63fff-81e0-42bb-ac51-39f5904b97be">
   <stat_objects>
     <stat_object index="0" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_ASC_PoisonDart" />
-        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
-        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart" />
-        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="3" />
-        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="Skill_Earth_PoisonDart" />
-        <field name="PoisonResistance" type="IntegerStatObjectFieldDefinition" value="-10" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_ASC_PoisonDart"/>
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act"/>
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart"/>
+        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="3"/>
+        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="Skill_Earth_PoisonDart"/>
+        <field name="PoisonResistance" type="IntegerStatObjectFieldDefinition" value="-10"/>
       </fields>
     </stat_object>
     <stat_object index="1" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_ASC_Contaminate" />
-        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
-        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart" />
-        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="2" />
-        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="Skill_Earth_Contamination" />
-        <field name="PoisonResistance" type="IntegerStatObjectFieldDefinition" value="-10" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_ASC_Contaminate"/>
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act"/>
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart"/>
+        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="2"/>
+        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="Skill_Earth_Contamination"/>
+        <field name="PoisonResistance" type="IntegerStatObjectFieldDefinition" value="-10"/>
       </fields>
     </stat_object>
     <stat_object index="2" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_ASC_PoisonWave" />
-        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
-        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart" />
-        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="2" />
-        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="Skill_Earth_PoisonWave" />
-        <field name="PoisonResistance" type="IntegerStatObjectFieldDefinition" value="-10" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_ASC_PoisonWave"/>
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act"/>
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart"/>
+        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="2"/>
+        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="Skill_Earth_PoisonWave"/>
+        <field name="PoisonResistance" type="IntegerStatObjectFieldDefinition" value="-10"/>
       </fields>
     </stat_object>
     <stat_object index="3" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_ASC_Trigger" />
-        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
-        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart" />
-        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="-1" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_ASC_Trigger"/>
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act"/>
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart"/>
+        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="-1"/>
       </fields>
     </stat_object>
     <stat_object index="4" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_Fortified" />
-        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
-        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart" />
-        <field name="Armor" type="IntegerStatObjectFieldDefinition" value="40" />
-        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="2" />
-        <field name="Flags" type="StringStatObjectFieldDefinition" value="Grounded" />
-        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="statIcons_Fortified" />
-        <field name="PhysicalResistance" type="IntegerStatObjectFieldDefinition" value="10" />
-        <field name="PiercingResistance" type="IntegerStatObjectFieldDefinition" value="10" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_Fortified"/>
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act"/>
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart"/>
+        <field name="Armor" type="IntegerStatObjectFieldDefinition" value="40"/>
+        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="2"/>
+        <field name="Flags" type="StringStatObjectFieldDefinition" value="Grounded"/>
+        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="statIcons_Fortified"/>
+        <field name="PhysicalResistance" type="IntegerStatObjectFieldDefinition" value="10"/>
+        <field name="PiercingResistance" type="IntegerStatObjectFieldDefinition" value="10"/>
       </fields>
     </stat_object>
     <stat_object index="5" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_ASC_Chilled_1" />
-        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
-        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart" />
-        <field name="MovementSpeedBoost" type="IntegerStatObjectFieldDefinition" value="-20" />
-        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="2" />
-        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="statIcons_Chill" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_ASC_Chilled_1"/>
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act"/>
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart"/>
+        <field name="MovementSpeedBoost" type="IntegerStatObjectFieldDefinition" value="-20"/>
+        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="2"/>
+        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="statIcons_Chill"/>
       </fields>
     </stat_object>
     <stat_object index="6" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_ASC_Chilled_2" />
-        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
-        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart" />
-        <field name="MovementSpeedBoost" type="IntegerStatObjectFieldDefinition" value="-40" />
-        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="2" />
-        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="statIcons_Chill" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_ASC_Chilled_2"/>
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act"/>
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart"/>
+        <field name="MovementSpeedBoost" type="IntegerStatObjectFieldDefinition" value="-40"/>
+        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="2"/>
+        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="statIcons_Chill"/>
       </fields>
     </stat_object>
     <stat_object index="7" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_ASC_Chilled_3" />
-        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
-        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart" />
-        <field name="MovementSpeedBoost" type="IntegerStatObjectFieldDefinition" value="-60" />
-        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="2" />
-        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="statIcons_Chill" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_ASC_Chilled_3"/>
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act"/>
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart"/>
+        <field name="MovementSpeedBoost" type="IntegerStatObjectFieldDefinition" value="-60"/>
+        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="2"/>
+        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="statIcons_Chill"/>
       </fields>
     </stat_object>
     <stat_object index="8" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_ASC_Chilled_4" />
-        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
-        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart" />
-        <field name="MovementSpeedBoost" type="IntegerStatObjectFieldDefinition" value="-80" />
-        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="2" />
-        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="statIcons_Chill" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_ASC_Chilled_4"/>
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act"/>
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart"/>
+        <field name="MovementSpeedBoost" type="IntegerStatObjectFieldDefinition" value="-80"/>
+        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="2"/>
+        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="statIcons_Chill"/>
       </fields>
     </stat_object>
     <stat_object index="9" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_MagicShell" />
-        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
-        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart" />
-        <field name="MagicArmor" type="IntegerStatObjectFieldDefinition" value="40" />
-        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="2" />
-        <field name="FireResistance" type="IntegerStatObjectFieldDefinition" value="5" />
-        <field name="EarthResistance" type="IntegerStatObjectFieldDefinition" value="5" />
-        <field name="WaterResistance" type="IntegerStatObjectFieldDefinition" value="5" />
-        <field name="AirResistance" type="IntegerStatObjectFieldDefinition" value="5" />
-        <field name="PoisonResistance" type="IntegerStatObjectFieldDefinition" value="5" />
-        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="Skill_Water_FrostyShell" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_MagicShell"/>
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act"/>
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart"/>
+        <field name="MagicArmor" type="IntegerStatObjectFieldDefinition" value="40"/>
+        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="2"/>
+        <field name="FireResistance" type="IntegerStatObjectFieldDefinition" value="5"/>
+        <field name="EarthResistance" type="IntegerStatObjectFieldDefinition" value="5"/>
+        <field name="WaterResistance" type="IntegerStatObjectFieldDefinition" value="5"/>
+        <field name="AirResistance" type="IntegerStatObjectFieldDefinition" value="5"/>
+        <field name="PoisonResistance" type="IntegerStatObjectFieldDefinition" value="5"/>
+        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="Skill_Water_FrostyShell"/>
       </fields>
     </stat_object>
     <stat_object index="10" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_ASC_Chilled" />
-        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
-        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart" />
-        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="-1" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_ASC_Chilled"/>
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act"/>
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart"/>
+        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="-1"/>
       </fields>
     </stat_object>
     <stat_object index="11" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_ASC_Exhausted" />
-        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
-        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart" />
-        <field name="MovementSpeedBoost" type="IntegerStatObjectFieldDefinition" value="-35" />
-        <field name="DodgeBoost" type="IntegerStatObjectFieldDefinition" value="-15" />
-        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="1" />
-        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="statIcons_Slowed" />
-        <field name="APMaximum" type="IntegerStatObjectFieldDefinition" value="-1" />
-        <field name="APStart" type="IntegerStatObjectFieldDefinition" value="-1" />
-        <field name="APRecovery" type="IntegerStatObjectFieldDefinition" value="-1" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_ASC_Exhausted"/>
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act"/>
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart"/>
+        <field name="MovementSpeedBoost" type="IntegerStatObjectFieldDefinition" value="-35"/>
+        <field name="DodgeBoost" type="IntegerStatObjectFieldDefinition" value="-15"/>
+        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="1"/>
+        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="statIcons_Slowed"/>
+        <field name="APMaximum" type="IntegerStatObjectFieldDefinition" value="-1"/>
+        <field name="APStart" type="IntegerStatObjectFieldDefinition" value="-1"/>
+        <field name="APRecovery" type="IntegerStatObjectFieldDefinition" value="-1"/>
       </fields>
     </stat_object>
     <stat_object index="12" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_Warm" />
-        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
-        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart" />
-        <field name="FireResistance" type="IntegerStatObjectFieldDefinition" value="-15" />
-        <field name="WaterResistance" type="IntegerStatObjectFieldDefinition" value="15" />
-        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="2" />
-        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="statIcons_Warm" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_Warm"/>
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act"/>
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart"/>
+        <field name="FireResistance" type="IntegerStatObjectFieldDefinition" value="-15"/>
+        <field name="WaterResistance" type="IntegerStatObjectFieldDefinition" value="15"/>
+        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="2"/>
+        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="statIcons_Warm"/>
       </fields>
     </stat_object>
     <stat_object index="13" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_ClearMinded" />
-        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
-        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart" />
-        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ClearMinded" />
-        <field name="AccuracyBoost" type="IntegerStatObjectFieldDefinition" value="25" />
-        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="10" />
-        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="Skill_Fire_BoostPerception" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_ClearMinded"/>
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act"/>
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart"/>
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ClearMinded"/>
+        <field name="AccuracyBoost" type="IntegerStatObjectFieldDefinition" value="25"/>
+        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="10"/>
+        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="Skill_Fire_BoostPerception"/>
       </fields>
     </stat_object>
     <stat_object index="14" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_Burning" />
-        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
-        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart" />
-        <field name="FireResistance" type="IntegerStatObjectFieldDefinition" value="-20" />
-        <field name="WaterResistance" type="IntegerStatObjectFieldDefinition" value="20" />
-        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="2" />
-        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="statIcons_Fire" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_Burning"/>
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act"/>
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart"/>
+        <field name="FireResistance" type="IntegerStatObjectFieldDefinition" value="-20"/>
+        <field name="WaterResistance" type="IntegerStatObjectFieldDefinition" value="20"/>
+        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="2"/>
+        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="statIcons_Fire"/>
       </fields>
     </stat_object>
     <stat_object index="15" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_Frozen" />
-        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act" />
-        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart" />
-        <field name="DodgeBoost" type="IntegerStatObjectFieldDefinition" value="-100" />
-        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="1" />
-        <field name="Flags" type="StringStatObjectFieldDefinition" value="FearImmunity;CharmImmunity;TauntedImmunity;SleepingImmunity;PoisonImmunity;BleedingImmunity;PetrifiedImmunity;StunImmunity;StunImmunity;WetImmunity;" />
-        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="statIcons_Frozen" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_Frozen"/>
+        <field name="Act" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Act"/>
+        <field name="Act part" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="ActPart"/>
+        <field name="DodgeBoost" type="IntegerStatObjectFieldDefinition" value="-100"/>
+        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="1"/>
+        <field name="Flags" type="StringStatObjectFieldDefinition" value="FearImmunity;CharmImmunity;TauntedImmunity;SleepingImmunity;PoisonImmunity;BleedingImmunity;PetrifiedImmunity;StunImmunity;StunImmunity;WetImmunity;"/>
+        <field name="StatusIcon" type="StringStatObjectFieldDefinition" value="statIcons_Frozen"/>
       </fields>
     </stat_object>
     <stat_object index="16" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="QUEST_Tea_Brand_A" />
-        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Story" />
-        <field name="RootTemplate" type="RootTemplateStatObjectFieldDefinition" value="28c858bc-ed95-43eb-85a7-7aadaa53f3de" />
-        <field name="Value" type="IntegerStatObjectFieldDefinition" value="150" />
-        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="2" />
-        <field name="InventoryTab" type="EnumerationStatObjectFieldDefinition" value="4" enumeration_type_name="InventoryTabs" />
-        <field name="MinLevel" type="IntegerStatObjectFieldDefinition" value="1" />
-        <field name="MaxLevel" type="IntegerStatObjectFieldDefinition" value="20" />
-        <field name="SingleHanded" type="IntegerStatObjectFieldDefinition" value="1" />
-        <field name="TwoHanded" type="IntegerStatObjectFieldDefinition" value="1" />
-        <field name="Ranged" type="IntegerStatObjectFieldDefinition" value="1" />
-        <field name="DualWielding" type="IntegerStatObjectFieldDefinition" value="1" />
-        <field name="WarriorLore" type="IntegerStatObjectFieldDefinition" value="1" />
-        <field name="RangerLore" type="IntegerStatObjectFieldDefinition" value="1" />
-        <field name="RogueLore" type="IntegerStatObjectFieldDefinition" value="1" />
-        <field name="FireSpecialist" type="IntegerStatObjectFieldDefinition" value="1" />
-        <field name="WaterSpecialist" type="IntegerStatObjectFieldDefinition" value="1" />
-        <field name="AirSpecialist" type="IntegerStatObjectFieldDefinition" value="1" />
-        <field name="EarthSpecialist" type="IntegerStatObjectFieldDefinition" value="1" />
-        <field name="Necromancy" type="IntegerStatObjectFieldDefinition" value="1" />
-        <field name="Polymorph" type="IntegerStatObjectFieldDefinition" value="1" />
-        <field name="Summoning" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="QUEST_Tea_Brand_A"/>
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Story"/>
+        <field name="RootTemplate" type="RootTemplateStatObjectFieldDefinition" value="28c858bc-ed95-43eb-85a7-7aadaa53f3de"/>
+        <field name="Value" type="IntegerStatObjectFieldDefinition" value="150"/>
+        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="2"/>
+        <field name="InventoryTab" type="EnumerationStatObjectFieldDefinition" value="4" enumeration_type_name="InventoryTabs"/>
+        <field name="MinLevel" type="IntegerStatObjectFieldDefinition" value="1"/>
+        <field name="MaxLevel" type="IntegerStatObjectFieldDefinition" value="20"/>
+        <field name="SingleHanded" type="IntegerStatObjectFieldDefinition" value="1"/>
+        <field name="TwoHanded" type="IntegerStatObjectFieldDefinition" value="1"/>
+        <field name="Ranged" type="IntegerStatObjectFieldDefinition" value="1"/>
+        <field name="DualWielding" type="IntegerStatObjectFieldDefinition" value="1"/>
+        <field name="WarriorLore" type="IntegerStatObjectFieldDefinition" value="1"/>
+        <field name="RangerLore" type="IntegerStatObjectFieldDefinition" value="1"/>
+        <field name="RogueLore" type="IntegerStatObjectFieldDefinition" value="1"/>
+        <field name="FireSpecialist" type="IntegerStatObjectFieldDefinition" value="1"/>
+        <field name="WaterSpecialist" type="IntegerStatObjectFieldDefinition" value="1"/>
+        <field name="AirSpecialist" type="IntegerStatObjectFieldDefinition" value="1"/>
+        <field name="EarthSpecialist" type="IntegerStatObjectFieldDefinition" value="1"/>
+        <field name="Necromancy" type="IntegerStatObjectFieldDefinition" value="1"/>
+        <field name="Polymorph" type="IntegerStatObjectFieldDefinition" value="1"/>
+        <field name="Summoning" type="IntegerStatObjectFieldDefinition" value="1"/>
       </fields>
     </stat_object>
     <stat_object index="17" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="QUEST_Tea_Cup_Brand_A" />
-        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Story" />
-        <field name="RootTemplate" type="RootTemplateStatObjectFieldDefinition" value="d01218dd-f4bb-47fd-9847-2012fb7bde3b" />
-        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="3" />
-        <field name="InventoryTab" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="InventoryTabs" />
-        <field name="Strength" type="EnumerationStatObjectFieldDefinition" value="131" enumeration_type_name="Penalty PreciseQualifier" />
-        <field name="Finesse" type="EnumerationStatObjectFieldDefinition" value="131" enumeration_type_name="Penalty PreciseQualifier" />
-        <field name="Intelligence" type="EnumerationStatObjectFieldDefinition" value="131" enumeration_type_name="Penalty PreciseQualifier" />
-        <field name="Constitution" type="EnumerationStatObjectFieldDefinition" value="131" enumeration_type_name="Penalty PreciseQualifier" />
-        <field name="Wits" type="EnumerationStatObjectFieldDefinition" value="161" enumeration_type_name="Penalty PreciseQualifier" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="QUEST_Tea_Cup_Brand_A"/>
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="_Story"/>
+        <field name="RootTemplate" type="RootTemplateStatObjectFieldDefinition" value="d01218dd-f4bb-47fd-9847-2012fb7bde3b"/>
+        <field name="Duration" type="IntegerStatObjectFieldDefinition" value="3"/>
+        <field name="InventoryTab" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="InventoryTabs"/>
+        <field name="Strength" type="EnumerationStatObjectFieldDefinition" value="131" enumeration_type_name="Penalty PreciseQualifier"/>
+        <field name="Finesse" type="EnumerationStatObjectFieldDefinition" value="131" enumeration_type_name="Penalty PreciseQualifier"/>
+        <field name="Intelligence" type="EnumerationStatObjectFieldDefinition" value="131" enumeration_type_name="Penalty PreciseQualifier"/>
+        <field name="Constitution" type="EnumerationStatObjectFieldDefinition" value="131" enumeration_type_name="Penalty PreciseQualifier"/>
+        <field name="Wits" type="EnumerationStatObjectFieldDefinition" value="161" enumeration_type_name="Penalty PreciseQualifier"/>
       </fields>
     </stat_object>
   </stat_objects>

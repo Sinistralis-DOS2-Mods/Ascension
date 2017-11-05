@@ -1,7 +1,8 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
-
+// Global OR table to block excessive queries
+DB_ASC_OR(0);
 KBSECTION
 PROC
 	PROC_ASC_ApplyDamageFromSourceToTarget((CHARACTERGUID)_Source, (CHARACTERGUID)_Target, (STRING)_Skill, (INTEGER)_IsSingleTarget)

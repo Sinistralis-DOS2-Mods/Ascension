@@ -1,346 +1,346 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <stats stat_object_definition_id="e2a8d59b-0e34-4a7c-bf5f-db7a2bb34cde">
   <stat_objects>
     <stat_object index="0" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="BLINDING_RADIANCE" />
-        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME" />
-        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
-        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Blinding Radiance" />
-        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character is beaming with energy, blinding all enemies in [1] radius." />
-        <field name="DescriptionParams" type="StringStatObjectFieldDefinition" value="AuraRadius" />
-        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Air_BlindingRadiance" />
-        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="FormatStringColor" />
-        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_BlindingRadiance_01:Dummy_BodyFX" />
-        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Blinding_Radiance" />
-        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_Blinding_Radiance" />
-        <field name="AuraRadius" type="IntegerStatObjectFieldDefinition" value="8" />
-        <field name="AuraEnemies" type="StringStatObjectFieldDefinition" value="BLIND" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="BLINDING_RADIANCE"/>
+        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME"/>
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo"/>
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Blinding Radiance"/>
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character is beaming with energy, blinding all enemies in [1] radius."/>
+        <field name="DescriptionParams" type="StringStatObjectFieldDefinition" value="AuraRadius"/>
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Air_BlindingRadiance"/>
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="FormatStringColor"/>
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_BlindingRadiance_01:Dummy_BodyFX"/>
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Blinding_Radiance"/>
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_Blinding_Radiance"/>
+        <field name="AuraRadius" type="IntegerStatObjectFieldDefinition" value="8"/>
+        <field name="AuraEnemies" type="StringStatObjectFieldDefinition" value="BLIND"/>
       </fields>
     </stat_object>
     <stat_object index="1" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="CLEAR_MINDED" />
-        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME" />
-        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
-        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Clear-Minded" />
-        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Increases Wits by 10% and an additional 2% of caster's Pyrokinetic skill. Increases Accuracy. Provides immunity to mind altering effects." />
-        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Fire_BoostPerception" />
-        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="FormatStringColor" />
-        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Clearminded_01,KeepRot:Dummy_OverheadFX" />
-        <field name="ImmuneFlag" type="EnumerationStatObjectFieldDefinition" value="42" enumeration_type_name="AttributeFlag" />
-        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ClearMinded" />
-        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ClearMinded" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="CLEAR_MINDED"/>
+        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME"/>
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo"/>
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Clear-Minded"/>
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Increases Wits by 10% and an additional 2% of caster's Pyrokinetic skill. Increases Accuracy. Provides immunity to mind altering effects."/>
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Fire_BoostPerception"/>
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="FormatStringColor"/>
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Clearminded_01,KeepRot:Dummy_OverheadFX"/>
+        <field name="ImmuneFlag" type="EnumerationStatObjectFieldDefinition" value="42" enumeration_type_name="AttributeFlag"/>
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ClearMinded"/>
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ClearMinded"/>
       </fields>
     </stat_object>
     <stat_object index="2" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_TRIGGER_PYROCLASTIC_ROCK" />
-        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME" />
-        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Trigger" />
-        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_PyroclasticRock" />
-        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
-        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="additional Physical Damage" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_TRIGGER_PYROCLASTIC_ROCK"/>
+        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME"/>
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Trigger"/>
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_PyroclasticRock"/>
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo"/>
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="additional Physical Damage"/>
       </fields>
     </stat_object>
     <stat_object index="3" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_TRIGGER_ROCK_SPIKES" />
-        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME" />
-        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Trigger" />
-        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_RockSpikes" />
-        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
-        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="additional Physical Damage" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_TRIGGER_ROCK_SPIKES"/>
+        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME"/>
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Trigger"/>
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_RockSpikes"/>
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo"/>
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="additional Physical Damage"/>
       </fields>
     </stat_object>
     <stat_object index="4" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_TRIGGER_POISON_DART" />
-        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME" />
-        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Trigger" />
-        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_Trigger_PoisonDart" />
-        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
-        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Trigger" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_TRIGGER_POISON_DART"/>
+        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME"/>
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Trigger"/>
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_Trigger_PoisonDart"/>
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo"/>
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Trigger"/>
       </fields>
     </stat_object>
     <stat_object index="5" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_TRIGGER_CONTAMINATE" />
-        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME" />
-        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Trigger" />
-        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_Trigger_Contaminate" />
-        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
-        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Trigger" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_TRIGGER_CONTAMINATE"/>
+        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME"/>
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Trigger"/>
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_Trigger_Contaminate"/>
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo"/>
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Trigger"/>
       </fields>
     </stat_object>
     <stat_object index="6" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_TRIGGER_POISON_WAVE" />
-        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME" />
-        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Trigger" />
-        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_Trigger_PoisonWave" />
-        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
-        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Trigger" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_TRIGGER_POISON_WAVE"/>
+        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME"/>
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Trigger"/>
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_Trigger_PoisonWave"/>
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo"/>
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Trigger"/>
       </fields>
     </stat_object>
     <stat_object index="7" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_TRIGGER_RESTORATION" />
-        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME" />
-        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Trigger" />
-        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_Trigger_Restoration" />
-        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
-        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Trigger" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_TRIGGER_RESTORATION"/>
+        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME"/>
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Trigger"/>
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_Trigger_Restoration"/>
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo"/>
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Trigger"/>
       </fields>
     </stat_object>
     <stat_object index="8" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_CHILLED_1" />
-        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME" />
-        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Chilled" />
-        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character is chilled.  Freezes in 4 applications." />
-        <field name="Icon" type="StringStatObjectFieldDefinition" value="statIcons_Chill" />
-        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="23" enumeration_type_name="FormatStringColor" />
-        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Chilled_01:Dummy_StatusFX" />
-        <field name="StatusEffectOverrideForItems" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Item_Chilled_01" />
-        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
-        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000" />
-        <field name="ImmuneFlag" type="EnumerationStatObjectFieldDefinition" value="9" enumeration_type_name="AttributeFlag" />
-        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Chilled_1" />
-        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_Chilled" />
-        <field name="StackPriority" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_CHILLED_1"/>
+        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME"/>
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Chilled"/>
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character is chilled.  Freezes in 4 applications."/>
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="statIcons_Chill"/>
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="23" enumeration_type_name="FormatStringColor"/>
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Chilled_01:Dummy_StatusFX"/>
+        <field name="StatusEffectOverrideForItems" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Item_Chilled_01"/>
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType"/>
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000"/>
+        <field name="ImmuneFlag" type="EnumerationStatObjectFieldDefinition" value="9" enumeration_type_name="AttributeFlag"/>
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Chilled_1"/>
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_Chilled"/>
+        <field name="StackPriority" type="IntegerStatObjectFieldDefinition" value="1"/>
       </fields>
     </stat_object>
     <stat_object index="9" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_CHILLED_2" />
-        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME" />
-        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Cold" />
-        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character is cold. Freezes in 3 applications." />
-        <field name="Icon" type="StringStatObjectFieldDefinition" value="statIcons_Chill" />
-        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="23" enumeration_type_name="FormatStringColor" />
-        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Chilled_01:Dummy_StatusFX" />
-        <field name="StatusEffectOverrideForItems" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Item_Chilled_01" />
-        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
-        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000" />
-        <field name="ImmuneFlag" type="EnumerationStatObjectFieldDefinition" value="9" enumeration_type_name="AttributeFlag" />
-        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Chilled_2" />
-        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_Chilled" />
-        <field name="StackPriority" type="IntegerStatObjectFieldDefinition" value="2" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_CHILLED_2"/>
+        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME"/>
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Cold"/>
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character is cold. Freezes in 3 applications."/>
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="statIcons_Chill"/>
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="23" enumeration_type_name="FormatStringColor"/>
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Chilled_01:Dummy_StatusFX"/>
+        <field name="StatusEffectOverrideForItems" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Item_Chilled_01"/>
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType"/>
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000"/>
+        <field name="ImmuneFlag" type="EnumerationStatObjectFieldDefinition" value="9" enumeration_type_name="AttributeFlag"/>
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Chilled_2"/>
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_Chilled"/>
+        <field name="StackPriority" type="IntegerStatObjectFieldDefinition" value="2"/>
       </fields>
     </stat_object>
     <stat_object index="10" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_CHILLED_3" />
-        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME" />
-        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Shivering" />
-        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character is shivering. Freezes in 2 applications." />
-        <field name="Icon" type="StringStatObjectFieldDefinition" value="statIcons_Chill" />
-        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="23" enumeration_type_name="FormatStringColor" />
-        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Chilled_01:Dummy_StatusFX" />
-        <field name="StatusEffectOverrideForItems" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Item_Chilled_01" />
-        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
-        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000" />
-        <field name="ImmuneFlag" type="EnumerationStatObjectFieldDefinition" value="9" enumeration_type_name="AttributeFlag" />
-        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Chilled_3" />
-        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_Chilled" />
-        <field name="StackPriority" type="IntegerStatObjectFieldDefinition" value="3" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_CHILLED_3"/>
+        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME"/>
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Shivering"/>
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character is shivering. Freezes in 2 applications."/>
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="statIcons_Chill"/>
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="23" enumeration_type_name="FormatStringColor"/>
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Chilled_01:Dummy_StatusFX"/>
+        <field name="StatusEffectOverrideForItems" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Item_Chilled_01"/>
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType"/>
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000"/>
+        <field name="ImmuneFlag" type="EnumerationStatObjectFieldDefinition" value="9" enumeration_type_name="AttributeFlag"/>
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Chilled_3"/>
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_Chilled"/>
+        <field name="StackPriority" type="IntegerStatObjectFieldDefinition" value="3"/>
       </fields>
     </stat_object>
     <stat_object index="11" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_CHILLED_4" />
-        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME" />
-        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Freezing" />
-        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character is freezing. Freezes in 1 application." />
-        <field name="Icon" type="StringStatObjectFieldDefinition" value="statIcons_Chill" />
-        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="23" enumeration_type_name="FormatStringColor" />
-        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Chilled_01:Dummy_StatusFX" />
-        <field name="StatusEffectOverrideForItems" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Item_Chilled_01" />
-        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
-        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000" />
-        <field name="ImmuneFlag" type="EnumerationStatObjectFieldDefinition" value="9" enumeration_type_name="AttributeFlag" />
-        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Chilled_4" />
-        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_Chilled" />
-        <field name="StackPriority" type="IntegerStatObjectFieldDefinition" value="4" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_CHILLED_4"/>
+        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME"/>
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Freezing"/>
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character is freezing. Freezes in 1 application."/>
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="statIcons_Chill"/>
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="23" enumeration_type_name="FormatStringColor"/>
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Chilled_01:Dummy_StatusFX"/>
+        <field name="StatusEffectOverrideForItems" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Item_Chilled_01"/>
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType"/>
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000"/>
+        <field name="ImmuneFlag" type="EnumerationStatObjectFieldDefinition" value="9" enumeration_type_name="AttributeFlag"/>
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Chilled_4"/>
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_Chilled"/>
+        <field name="StackPriority" type="IntegerStatObjectFieldDefinition" value="4"/>
       </fields>
     </stat_object>
     <stat_object index="12" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_TRIGGER_ICE_FAN" />
-        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME" />
-        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Chilled_01:Dummy_StatusFX" />
-        <field name="StatusEffectOverrideForItems" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Item_Chilled_01" />
-        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
-        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000" />
-        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Trigger" />
-        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Chilled" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_TRIGGER_ICE_FAN"/>
+        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME"/>
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Chilled_01:Dummy_StatusFX"/>
+        <field name="StatusEffectOverrideForItems" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Item_Chilled_01"/>
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType"/>
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000"/>
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Trigger"/>
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Chilled"/>
       </fields>
     </stat_object>
     <stat_object index="13" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_TRIGGER_FLAMING_DAGGERS" />
-        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME" />
-        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Chilled_01:Dummy_StatusFX" />
-        <field name="StatusEffectOverrideForItems" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Item_Chilled_01" />
-        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
-        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000" />
-        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Trigger" />
-        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Burning" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_TRIGGER_FLAMING_DAGGERS"/>
+        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME"/>
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Chilled_01:Dummy_StatusFX"/>
+        <field name="StatusEffectOverrideForItems" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Item_Chilled_01"/>
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType"/>
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000"/>
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Trigger"/>
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Burning"/>
       </fields>
     </stat_object>
     <stat_object index="14" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_TRIGGER_CHILLED" />
-        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME" />
-        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="23" enumeration_type_name="FormatStringColor" />
-        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Chilled_01:Dummy_StatusFX" />
-        <field name="StatusEffectOverrideForItems" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Item_Chilled_01" />
-        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
-        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000" />
-        <field name="ImmuneFlag" type="EnumerationStatObjectFieldDefinition" value="9" enumeration_type_name="AttributeFlag" />
-        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Chilled" />
-        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Chilled" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_TRIGGER_CHILLED"/>
+        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME"/>
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="23" enumeration_type_name="FormatStringColor"/>
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Chilled_01:Dummy_StatusFX"/>
+        <field name="StatusEffectOverrideForItems" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Item_Chilled_01"/>
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType"/>
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000"/>
+        <field name="ImmuneFlag" type="EnumerationStatObjectFieldDefinition" value="9" enumeration_type_name="AttributeFlag"/>
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Chilled"/>
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Chilled"/>
       </fields>
     </stat_object>
     <stat_object index="15" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_EXHAUSTED" />
-        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME" />
-        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Exhausted" />
-        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Being hasted has taken it's toll." />
-        <field name="Icon" type="StringStatObjectFieldDefinition" value="statIcons_Slow" />
-        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="4" enumeration_type_name="FormatStringColor" />
-        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Weak_01:Dummy_BodyFX;RS3_FX_GP_Status_Weak_OverheadFX_01,KeepRot:Dummy_OverheadFX" />
-        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Exhausted" />
-        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Exhausted" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_EXHAUSTED"/>
+        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME"/>
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Exhausted"/>
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Being hasted has taken it's toll."/>
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="statIcons_Slow"/>
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="4" enumeration_type_name="FormatStringColor"/>
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Weak_01:Dummy_BodyFX;RS3_FX_GP_Status_Weak_OverheadFX_01,KeepRot:Dummy_OverheadFX"/>
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Exhausted"/>
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Exhausted"/>
       </fields>
     </stat_object>
     <stat_object index="16" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_PYRO_HASTED" />
-        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME" />
-        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Hasted" />
-        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character is hasted." />
-        <field name="Icon" type="StringStatObjectFieldDefinition" value="statIcons_Hasted" />
-        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="22" enumeration_type_name="FormatStringColor" />
-        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Hasted_01,KeepRot:Dummy_BodyFX" />
-        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="MaterialType" />
-        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="ImmuneFlag" type="EnumerationStatObjectFieldDefinition" value="34" enumeration_type_name="AttributeFlag" />
-        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Hasted" />
-        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_Hasted" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_PYRO_HASTED"/>
+        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME"/>
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Hasted"/>
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character is hasted."/>
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="statIcons_Hasted"/>
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="22" enumeration_type_name="FormatStringColor"/>
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Hasted_01,KeepRot:Dummy_BodyFX"/>
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="MaterialType"/>
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="ImmuneFlag" type="EnumerationStatObjectFieldDefinition" value="34" enumeration_type_name="AttributeFlag"/>
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Hasted"/>
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_Hasted"/>
       </fields>
     </stat_object>
     <stat_object index="17" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="CHILLED" />
-        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME" />
-        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Chilled" />
-        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character is chilled." />
-        <field name="Icon" type="StringStatObjectFieldDefinition" value="statIcons_Chill" />
-        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="23" enumeration_type_name="FormatStringColor" />
-        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Chilled_01:Dummy_StatusFX" />
-        <field name="StatusEffectOverrideForItems" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Item_Chilled_01" />
-        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
-        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000" />
-        <field name="ImmuneFlag" type="EnumerationStatObjectFieldDefinition" value="9" enumeration_type_name="AttributeFlag" />
-        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Chilled" />
-        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_Chilled" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="CHILLED"/>
+        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME"/>
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Chilled"/>
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Character is chilled."/>
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="statIcons_Chill"/>
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="23" enumeration_type_name="FormatStringColor"/>
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Chilled_01:Dummy_StatusFX"/>
+        <field name="StatusEffectOverrideForItems" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Item_Chilled_01"/>
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType"/>
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000"/>
+        <field name="ImmuneFlag" type="EnumerationStatObjectFieldDefinition" value="9" enumeration_type_name="AttributeFlag"/>
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_Chilled"/>
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_Chilled"/>
       </fields>
     </stat_object>
     <stat_object index="18" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_FAKE_FREEZE" />
-        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME" />
-        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="23" enumeration_type_name="FormatStringColor" />
-        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Chilled_01:Dummy_StatusFX" />
-        <field name="StatusEffectOverrideForItems" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Item_Chilled_01" />
-        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType" />
-        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
-        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000" />
-        <field name="ImmuneFlag" type="EnumerationStatObjectFieldDefinition" value="9" enumeration_type_name="AttributeFlag" />
-        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Chilled" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_FAKE_FREEZE"/>
+        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME"/>
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="FormatColor" type="EnumerationStatObjectFieldDefinition" value="23" enumeration_type_name="FormatStringColor"/>
+        <field name="StatusEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Chilled_01:Dummy_StatusFX"/>
+        <field name="StatusEffectOverrideForItems" type="StringStatObjectFieldDefinition" value="RS3_FX_GP_Status_Item_Chilled_01"/>
+        <field name="MaterialType" type="EnumerationStatObjectFieldDefinition" value="2" enumeration_type_name="MaterialType"/>
+        <field name="MaterialApplyBody" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyArmor" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyWeapon" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo"/>
+        <field name="MaterialApplyNormalMap" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo"/>
+        <field name="MaterialFadeAmount" type="IntegerStatObjectFieldDefinition" value="3000"/>
+        <field name="ImmuneFlag" type="EnumerationStatObjectFieldDefinition" value="9" enumeration_type_name="AttributeFlag"/>
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Chilled"/>
       </fields>
     </stat_object>
     <stat_object index="19" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_BOW" />
-        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME" />
-        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Trigger" />
-        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_BOWTYPE" />
-        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_BOW"/>
+        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME"/>
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Trigger"/>
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_BOWTYPE"/>
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo"/>
       </fields>
     </stat_object>
     <stat_object index="20" is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_CROSSBOW" />
-        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME" />
-        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Trigger" />
-        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_BOWTYPE" />
-        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="ASC_CROSSBOW"/>
+        <field name="Type" type="StringStatObjectFieldDefinition" value="CONSUME"/>
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_ASC_Trigger"/>
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_ASC_BOWTYPE"/>
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo"/>
       </fields>
     </stat_object>
   </stat_objects>

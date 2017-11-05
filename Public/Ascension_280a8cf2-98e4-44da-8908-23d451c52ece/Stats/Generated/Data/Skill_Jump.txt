@@ -1,0 +1,8 @@
+new entry "_Def"
+type "SkillData"
+data "HitRadius" "1"
+data "Damage On Jump" "No"
+data "Damage On Landing" "No"
+data "TeleportTextEvent" "1"
+data "LandingEffect" "1"
+

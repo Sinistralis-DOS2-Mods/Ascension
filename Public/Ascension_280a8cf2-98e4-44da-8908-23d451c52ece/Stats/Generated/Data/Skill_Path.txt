@@ -1,0 +1,10 @@
+new entry "_def"
+type "SkillData"
+data "MaxDistance" "1"
+data "Offset" "1"
+data "Height" "1"
+data "TravelSpeed" "1"
+data "FlyEffect" "1"
+data "ImpactEffect" "1"
+data "Skillbook" "1"
+

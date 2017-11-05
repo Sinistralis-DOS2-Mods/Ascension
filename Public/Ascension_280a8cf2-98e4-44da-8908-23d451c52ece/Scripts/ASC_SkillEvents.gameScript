@@ -143,4 +143,12 @@ ON
 ACTIONS
 	Set(%ASC_DamageSkill, Projectile_ASC_Shatter_5)
 
+/*
+EVENT Projectile_Ricochet
+ON
+	OnFunction("Projectile_Ricochet")
+ACTIONS
+	CharacterSetFightMode(%ASC_Source, 1, 1)
+	CharacterSetAnimationOverride(%ASC_Source, "skill_attack_precision_01_cast")
+*/
 

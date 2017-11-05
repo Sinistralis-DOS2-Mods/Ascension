@@ -64,8 +64,6 @@ AND
 	_HealMod > 0.0
 THEN
 	PROC_ASC_ApplyHealingToTarget(_Target, _HealMod);
-
-	
 EXITSECTION
 
 ENDEXITSECTION

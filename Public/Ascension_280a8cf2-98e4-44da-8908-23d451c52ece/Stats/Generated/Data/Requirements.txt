@@ -1,0 +1,2 @@
+requirement "ElementalAffinity","FireSpecialist 5;WaterSpecialist 5;AirSpecialist 5;EarthSpecialist 5;"
+
