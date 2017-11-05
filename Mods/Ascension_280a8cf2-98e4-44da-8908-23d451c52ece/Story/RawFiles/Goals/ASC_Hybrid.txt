@@ -10,7 +10,6 @@ IF
 AND
 	DB_ASC_Hybrid(_Status, _Skill, _IsSingleTarget)
 THEN
-	DB_ASC_MultistrikeTargets(_Target, _Source, 1);
 	PROC_ASC_ApplyDamageFromSourceToTarget(_Source, _Target, _Skill, 1);
 	RemoveStatus(_Target, _Status);
 EXITSECTION
