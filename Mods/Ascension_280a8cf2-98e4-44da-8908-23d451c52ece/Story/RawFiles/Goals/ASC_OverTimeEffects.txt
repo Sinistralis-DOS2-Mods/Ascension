@@ -1,9 +1,13 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
-DB_ASC_DoTs("ASC_POISON_DART", "ASC_TRIGGER_POISON_DART", "Projectile_ASC_DoT_PoisonDartStart");
-DB_ASC_DoTs("ASC_CONTAMINATE", "ASC_TRIGGER_CONTAMINATE","Projectile_ASC_DoT_Contaminate");
-DB_ASC_DoTs("ASC_POISON_WAVE", "ASC_TRIGGER_POISON_WAVE", "Projectile_ASC_DoT_PoisonWave");
+DB_ASC_DoTs("ASC_POISON_DART", "ASC_TRIGGER_POISON_DART", "ASC_TICK_PoisonDart");
+DB_ASC_DoTs("ASC_CONTAMINATE", "ASC_TRIGGER_CONTAMINATE", "ASC_TICK_Contaminate");
+DB_ASC_DoTs("ASC_POISON_WAVE", "ASC_TRIGGER_POISON_WAVE", "ASC_TICK_PoisonWave");
+
+DB_ASC_OnTick("ASC_TICK_PoisonDart", "Projectile_ASC_DoT_PoisonDartStart");
+DB_ASC_OnTick("ASC_TICK_Contaminate", "Projectile_ASC_DoT_Contaminate");
+DB_ASC_OnTick("ASC_TICK_PoisonWave", "Projectile_ASC_DoT_PoisonWave");
 
 DB_ASC_DoTsCure("FORTIFIED");
 DB_ASC_DoTsCure("REGENERATION");
@@ -13,10 +17,10 @@ KBSECTION
 IF
 	CharacterStatusApplied(_Target, _Master, (CHARACTERGUID)_Source)
 AND
-	DB_ASC_DoTs(_Master, _Slave, _Skill)
+	DB_ASC_DoTs(_Master, _Slave, _Event)
 THEN
 	ApplyStatus(_Target, _Slave, 5.96);
-	DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _Skill);
+	DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _Event);
 
 IF
 	CharacterStatusApplied(_Target, _Status, _)
@@ -32,6 +36,14 @@ THEN
 	NOT DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _Skill);
 	RemoveStatus(_Target, _Master);
 	RemoveStatus(_Target, _Slave);
+
+IF
+	CharacterCharacterEvent(_Source, _Target, _Event)
+AND
+	DB_ASC_OnTick(_Event, _Skill)
+THEN
+	PROC_ASC_ApplyDamageFromSourceToTarget(_Source, _Target, _Skill, 1);
+
 EXITSECTION
 
 ENDEXITSECTION

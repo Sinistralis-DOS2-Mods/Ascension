@@ -1,42 +1,25 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
-DB_ASC_HoTs("REGENERATION", "ASC_TRIGGER_RESTORATION", .015, "ASC_OnRestoration");
+DB_ASC_HoTs("REGENERATION", "ASC_TRIGGER_RESTORATION", "ASC_OnRestoration");
 
+DB_ASC_OnTurn("ASC_OnRestoration", .015);
+
+DB_ASC_Heals("REGENERATION", .015);
 DB_ASC_Heals("CHAIN_HEAL", .025);
 KBSECTION
 IF
-	CharacterStatusRemoved(_Target, _Master, _)
-AND
-	DB_ASC_HoTs(_Master, _Slave, _, _)
-AND
-	DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _Skill, "ASC_OnRestoration")
-THEN
-	NOT DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _Skill, "ASC_OnRestoration");
-
-IF
 	CharacterStatusApplied(_Target, _Master, (CHARACTERGUID)_Source)
 AND
-	DB_ASC_HoTs(_Master, _Slave, _HealPotency, _Event)
-AND
-	CharacterGetAbility(_Source, "WaterSpecialist", _AbilityModifier)
-AND
-	Real(_AbilityModifier, _RealAbilityModifier)
-AND
-	RealProduct(_HealPotency, _RealAbilityModifier, _HealMod)
-AND
-	_HealMod > 0.0
+	DB_ASC_HoTs(_Master, _Slave, _Event)
 THEN
 	ApplyStatus(_Target, _Slave, 5.96);
-	DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, "", _Event);
-	PROC_ASC_ApplyHealingToTarget(_Target, _HealMod);
+	DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _Event);
 	
 IF
-	StoryEvent((CHARACTERGUID)_Target, _Event)
+	CharacterCharacterEvent(_Source, _Target, _Event)
 AND
-	DB_ASC_HoTs(_Master, _Slave, _HealPotency, _Event)
-AND
-	DB_ASC_OnTurn(_Target, _Source, _Master, _Slave, _, _Event)
+	DB_ASC_OnTurn(_Event, _HealPotency)
 AND
 	CharacterGetAbility(_Source, "WaterSpecialist", _AbilityModifier)
 AND
@@ -47,8 +30,6 @@ AND
 	_HealMod > 0.0
 THEN
 	PROC_ASC_ApplyHealingToTarget(_Target, _HealMod);
-
-
 
 IF
 	CharacterStatusApplied(_Target, _Status, (CHARACTERGUID)_Source)
